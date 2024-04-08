@@ -1,11 +1,3 @@
-* xref:module-01.adoc[1. RPM Native Container]
-** xref:module-01.adoc#repositories[Repositories]
-** xref:module-01.adoc#software[Software]
-
-* xref:module-02.adoc[2. GitHub Sourced Container]
-** xref:module-02.adoc#prerequisites[Install Prerequisites]
-** xref:module-02.adoc#container[Enable Container]
-
-* xref:Lab1_Setup.adoc[3. Lab1 SSH Setup]
+* xref:Lab1_Setup.adoc[1. Lab1 SSH Setup]
 ** xref:Lab1_Setup.adoc#introduction[Lab introduction]
 ** xref:Lab1_Setup.adoc#sshkeypair[Create a SSH key pair]
