@@ -1,4 +1,4 @@
-# Lab1 SSH Setup
+# Managing Risk & Threat Models
 
 
 Lab Length

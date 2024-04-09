@@ -1,4 +1,4 @@
-# Lab1 SSH Setup
+# Exploitation & Mitigation of Misconfigured Systems
 
 
 Lab Length

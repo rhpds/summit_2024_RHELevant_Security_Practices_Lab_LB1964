@@ -1,4 +1,4 @@
-# Lab1 SSH Setup
+# Hardening
 
 
 Lab Length

@@ -16,20 +16,13 @@ RHEL is a great platform right out of the box, but we can't make all the securit
 
 In today's lab, we are going to take you down several roads. 
 
-* Default to secure posture
-* Use strong, trusted crypo starting at install time
-* System wide crypto policy
-* Trusted source of packages and updates
-* Firewall installed and configured
-* Disable Unnecessary Services
-* Use Strong Password Policies
-* Use SSH Key Auth
-* Audit Logging (rsyslog server)●
-* Filesystem Security (With common misconfigs as examples)
-* Monitoring and Intrusion Detection
-* Backups (backup server)
-* Least Privilege (sudo rules)
-* Automate Security Framework (STIGs with openSCAP)
+* SSH Setup
+* Managing Risk & Threat Models
+* Trust
+* Audit
+* Network Facing
+* Hardening
+* Exploitation & Mitigation of Misconfigured Systems 
 
 == Lab Access
 
