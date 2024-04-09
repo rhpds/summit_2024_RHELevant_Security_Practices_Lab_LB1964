@@ -7,6 +7,10 @@ Medium/Average (~10-20 mins)
 Goal
 SOME Goal
 
-== 1.1: SOME HEADING 
+== 5.1 Firewall Default 
+
+== 5.2 Firewall Zones
+
+== 5.3 Dual Home Rules
 
 
