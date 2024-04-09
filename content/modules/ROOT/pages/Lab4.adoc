@@ -7,6 +7,12 @@ Medium/Average (~10-20 mins)
 Goal
 SOME Goal
 
-== 1.1: SOME HEADING 
+== 4.1 Rsyslog 
+
+== 4.2 AuditD
+
+== 4.3 AIDE
+
+== 4.4 SudoReplay
 
 
