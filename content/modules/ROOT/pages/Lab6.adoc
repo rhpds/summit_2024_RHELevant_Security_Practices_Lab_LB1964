@@ -7,6 +7,13 @@ Medium/Average (~10-20 mins)
 Goal
 SOME Goal
 
-== 1.1: SOME HEADING 
+== 6.1 Frameworks 
+
+== 6.2 STIGs
+
+== 6.3 OpenSCAP
+
+== 6.4 Other Tools or Resources
+
 
 
