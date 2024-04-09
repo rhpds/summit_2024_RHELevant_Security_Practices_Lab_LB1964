@@ -7,7 +7,7 @@ Medium/Average (~10-20 mins)
 Goal
 SOME Goal
 
-== 3.1: Default to secure posture
+== 3.1 Default to secure posture
 
 == 3.2 System wide crypto policy
 
