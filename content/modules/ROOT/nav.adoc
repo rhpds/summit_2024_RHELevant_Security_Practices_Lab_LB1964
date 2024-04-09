@@ -1,4 +1,4 @@
-* xref:Lab1_Setup.adoc[1. Lab1 SSH Setup]
+* xref:pages/Lab1_Setup.adoc[1. Lab1 SSH Setup]
 ** xref:Lab1_Setup.adoc#introduction[Lab introduction]
 ** xref:Lab1_Setup.adoc#sshkeypair[Create a SSH key pair]
 
