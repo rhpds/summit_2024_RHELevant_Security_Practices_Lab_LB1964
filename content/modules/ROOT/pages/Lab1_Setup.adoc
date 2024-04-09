@@ -109,7 +109,7 @@ authorized_keys  config  fnlngkey.pem  fnlngkey.pub  id_rsa  id_rsa.pub
 ----
 
 
-== 1.3 Logging onto the server 
+== 1.4 Logging onto the server 
 
 Up to this point we have been using the lab-user account.
 On our server we have a different user we need to log in with and then create a dedicated account for our automation services.
@@ -132,7 +132,7 @@ You should see a prompt with your current username and the hostname of the machi
 [ec2-user@node1 ~]$
 ----
 
-== 1.4 create ansibleuser on node1
+== 1.5 Create ansibleuser on node1
 
 In this section we are going to create a dedicated account to use ansible with, and add them to the wheel (also known as the sudoers) group.
 
@@ -177,7 +177,7 @@ And now you should see your terminal prompt changed back to
 [lab-user@bastion ~]$ 
 ----
 
-== 1.5 Push your ssh key to ansible user on node1
+== 1.6 Push your ssh key to ansible user on node1
 
 
 Now we need to push our ‘lab-user’ ssh public key to node1.
