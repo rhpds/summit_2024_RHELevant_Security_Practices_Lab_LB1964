@@ -191,3 +191,8 @@ I would type ‘ssh-copy-id ansibleuser@192.168.0.79’
 ----
 ssh-copy-id ansibleuser@serverIP
 ----
+
+== 1.7 Snapshot of current systems with Bash
+
+== 1.8 Snapshot of current systems with Ansible facts
+
