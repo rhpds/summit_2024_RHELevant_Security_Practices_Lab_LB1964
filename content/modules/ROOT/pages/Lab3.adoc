@@ -7,6 +7,14 @@ Medium/Average (~10-20 mins)
 Goal
 SOME Goal
 
-== 1.1: SOME HEADING 
+== 3.1: Default to secure posture
+
+== 3.2 System wide crypto policy
+
+== 3.3 Trusted source of packages and updates
+
+== 3.4 Use Strong Password Policies
+
+
 
 
