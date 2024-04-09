@@ -7,6 +7,13 @@ Medium/Average (~10-20 mins)
 Goal
 SOME Goal
 
-== 1.1: SOME HEADING 
+== 7.1 Run Ansible Script make common misconfig
+
+== 7.2 Show how it can be exploited
+
+== 7.3 Use what we have learned to configure
+
+== 7.4 Show with hardening the misconfig is no longer causing an Exploitation
+
 
 
