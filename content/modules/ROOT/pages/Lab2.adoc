@@ -7,7 +7,7 @@ Medium/Average (~10-20 mins)
 Goal
 SOME Goal
 
-= Lab 2. Managing Risk & Threat Models
+== Lab 2. Managing Risk & Threat Models
 
 
 Risk management is the process of identifying and assessing risks and creating a plan to minimize or control those risks and their potential impact on an organization. A risk is a potential for loss or damage. Risks can come from a variety of places such as legal liability, natural disasters, accidents, management errors, or cybersecurity threats.
