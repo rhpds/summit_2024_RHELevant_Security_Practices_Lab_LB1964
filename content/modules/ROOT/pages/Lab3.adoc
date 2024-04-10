@@ -7,9 +7,33 @@ Medium/Average (~10-20 mins)
 Goal
 SOME Goal
 
+Risk management is the process of identifying and assessing risks and creating a plan to minimize or control those risks and their potential impact on an organization. A risk is a potential for loss or damage. Risks can come from a variety of places such as legal liability, natural disasters, accidents, management errors, or cybersecurity threats.
+
 == 3.1 Default to secure posture
 
 == 3.2 System wide crypto policy
+
+The system-wide cryptographic policies is a system component that configures the core cryptographic subsystems, covering the TLS, IPsec, SSH, DNSSec, and Kerberos protocols. It provides a small set of policies, which the administrator can select. 
+
+=== 3.2.1 System-wide cryptographic policies
+
+When a system-wide policy is set up, applications in RHEL follow it and refuse to use algorithms and protocols that do not meet the policy, unless you explicitly request the application to do so. That is, the policy applies to the default behavior of applications when running with the system-provided configuration but you can override it if required.
+
+RHEL 9 contains the following predefined policies
+
+Default 
+The default system-wide cryptographic policy level offers secure settings for current threat models.
+Legacy
+Ensures maximum compatibility with Red Hat Enterprise Linux 6 and earlier; it is less secure due to an increased attack surface.
+Future
+A stricter forward-looking security level intended for testing a possible future policy.
+FIPS
+Conforms with the FIPS 140 requirements. 
+
+You can find out more about the differences on RHEL 9 hardening guide.
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/security_hardening/using-the-system-wide-cryptographic-policies_security-hardening#system-wide-crypto-policies_using-the-system-wide-cryptographic-policies
+
+
 
 == 3.3 Trusted source of packages and updates
 
