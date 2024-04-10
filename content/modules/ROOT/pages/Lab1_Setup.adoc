@@ -24,8 +24,7 @@ From your bastion host, open a terminal
 
 You should see a prompt with your current username and the hostname of the machine you are logged into.
 
-+
-[source,textinfo]
+[source,ini,role=execute,subs=attributes+]
 ----
 [lab-user@bastion ~]$
 ----
@@ -33,8 +32,7 @@ You should see a prompt with your current username and the hostname of the machi
 
 We want to find out if the current machine has any ssh keys under the users ‘.ssh’ directory. 
 
-+
-[source,bash]
+[source,ini,role=execute,subs=attributes+]
 ----
 ls ~/.ssh/
 ----
@@ -43,8 +41,7 @@ ls ~/.ssh/
 
 Next we want to create our own ssh-keypair, to do this using the following command.
 
-+
-[source,bash]
+[source,bash,role=execute,attributes+]
 ----
 ssh-keygen
 ----
