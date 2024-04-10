@@ -17,6 +17,10 @@ Instead of having to type in the username and password, we are going to set up s
 
 So first thing we need to do the set up and SSH key from our bastion host to talk to the machines we’re working on.
 
+There are 2 machines we will be connecting to.
+
+Your bastion host
+Your node host 
 
 == 1.2: Create a SSH key pair
 
