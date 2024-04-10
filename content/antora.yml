@@ -20,3 +20,7 @@ asciidoc:
       text: Red Hat
     - url: https://www.redhat.com/en/summit
       text: Summit
+    - url: { targethost }:9090
+      text: Web Console
+    - url: https://docs.ansible.com/ansible/latest/index.html
+      text: Ansible Docs
