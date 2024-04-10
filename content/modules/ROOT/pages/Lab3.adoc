@@ -21,18 +21,19 @@ When a system-wide policy is set up, applications in RHEL follow it and refuse t
 
 RHEL 9 contains the following predefined policies
 
-Default 
-The default system-wide cryptographic policy level offers secure settings for current threat models.
-Legacy
-Ensures maximum compatibility with Red Hat Enterprise Linux 6 and earlier; it is less secure due to an increased attack surface.
-Future
-A stricter forward-looking security level intended for testing a possible future policy.
-FIPS
-Conforms with the FIPS 140 requirements. 
+* Default 
+** The default system-wide cryptographic policy level offers secure settings for current threat models.
 
-You can find out more about the differences on RHEL 9 hardening guide.
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/security_hardening/using-the-system-wide-cryptographic-policies_security-hardening#system-wide-crypto-policies_using-the-system-wide-cryptographic-policies
+* Legacy
+** Ensures maximum compatibility with Red Hat Enterprise Linux 6 and earlier; it is less secure due to an increased attack surface.
 
+* Future
+** A stricter forward-looking security level intended for testing a possible future policy.
+
+* FIPS
+** Conforms with the FIPS 140 requirements. 
+
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/security_hardening/using-the-system-wide-cryptographic-policies_security-hardening#system-wide-crypto-policies_using-the-system-wide-cryptographic-policies[Check out the full documentation on System-wide cryptographic policies from RHEL 9 hardening guide.]
 
 
 == 3.3 Trusted source of packages and updates
