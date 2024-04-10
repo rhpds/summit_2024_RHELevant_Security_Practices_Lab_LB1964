@@ -16,7 +16,7 @@ asciidoc:
     ssh_password: devops
     ssh_command: ssh devops@bastion.{guid}.example.opentlc.com
     page-links:
-    - url: { targethost }:9090
-      text: Web Console
+#    - url: { targethost }:9090
+#      text: Web Console
     - url: https://docs.ansible.com/ansible/latest/index.html
       text: Ansible Docs
