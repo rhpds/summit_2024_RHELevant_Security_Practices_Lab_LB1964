@@ -1,0 +1,223 @@
+# Lab1 KVM Setup
+
+
+Lab Length
+Medium/Average (~10-20 mins)
+
+Goal
+Become familiar with the basics of ssh
+
+== 1.1: Introduction
+
+In this scenario you are a system administrator given a task to harden a Red Hat Enterprise Linux system. 
+You have no idea what is on the system, what it is running, the hardware, or software installed. 
+You are working on a black box.
+
+You are given credentials that should give you access to the machine. 
+You are given a Jump Box also known as a bastion host or as a control node, and a username to log in with. 
+
+Instead of having to type in the username and password, 
+we are going to set up ssh keys for authentication.
+
+
+Create a Red Hat account online to activate the No-cost Red Hat Enterprise Linux Individual Developer Subscription.
+
+https://developers.redhat.com/about[developers.redhat.com]
+
+You will need to verify your email address.
+
+Then you will be able to log in access.redhat.com with your newly created account.
+
+In the top left corner, click the **Downloads**,
+Then under Products find **Red Hat Enterprise Linux**,
+Then click the blue **All Red Hat Enterprise Linux Downloads**, 
+Scroll down untill you see the **Red Hat Enterprise Linux 9.3 KVM Guest Image**
+
+
+== 1.2 Set Up Local Machine
+
+
+
+
+So first thing we need to do the set up and SSH key from our bastion host to talk to the machines we’re working on.
+
+There are 2 machines we will be connecting to.
+
+* Your bastion host
+* Your node host 
+
+== 1.2: Create a SSH key pair
+
+From your bastion host, open a terminal
+
+You should see a prompt with your current username and the hostname of the machine you are logged into.
+
+[source,ini,role=execute,subs=attributes+]
+----
+[lab-user@bastion ~]$
+----
+
+
+We want to find out if the current machine has any ssh keys under the users ‘.ssh’ directory. 
+
+[source,ini,role=execute,subs=attributes+]
+----
+ls ~/.ssh/
+----
+
+‘ls’ is going to list the files under the directory /home/username/.ssh
+
+Next we want to create our own ssh-keypair, to do this using the following command.
+
+[source,bash,role=execute,attributes+]
+----
+ssh-keygen
+----
+
+This creates an interactive shell asking you a few questions.
+The first question is where do you want the key pair saved?
+We want to go with the default location, so hit the enter button on your keyboard.
+
+Next question is ‘Enter Passphrase” for your ssh key pair,
+If your environment requires a password on your ssh keypairs, I’ll have a supplemental ssh_advance  section at the end of the lab for you to go through.
+We are going to go default without a password.
+On your keyboard, hit enter twice.
+
+Then on the screen will be a message that says something like.
+
+
++
+[source,textinfo]
+----
+
+<<< OUTPUT ABRIDGED >>>
+
+Your identification has been saved in /home/lab-user/.ssh/id_rsa
+Your public key has been saved in /home/lab-user/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:5Z8GpqUSojEcZWvtspDVefI5YIVajUr3+HTVi3HcE+4 lab-user@bastion.fnlng.internal
+The key's randomart image is:
++---[RSA 3072]----+
+|    o  +.    o o.|
+|   o.+=o.   o =..|
+|  ..+=Bo. .. + o.|
+| . =oo.=o+. . o  |
+|  * o ooS.=    E |
+|   = + ..* o .   |
+|  . . . o   +    |
+|       .   .     |
+|                 |
++----[SHA256]-----+
+
+<<< OUTPUT ABRIDGED >>>
+----
+
+== 1.3: Verifying Key Pair Creation
+
+Now lets make sure we can see the newly created ssh keypair.
+
+We want to find out if the current machine has any ssh keys under the users ‘.ssh’ directory. 
+
++
+[source,bash]
+----
+ls ~/.ssh/
+----
+
+You should now see 2 new files called ‘id_rsa’ and ‘id_rsa.pub’
+
++
+[source,textinfo]
+----
+[lab-user@bastion ~]$ ls ~/.ssh/
+authorized_keys  config  fnlngkey.pem  fnlngkey.pub  id_rsa  id_rsa.pub
+----
+
+
+== 1.4 Logging onto the server 
+
+Up to this point we have been using the lab-user account.
+On our server we have a different user we need to log in with and then create a dedicated account for our automation services.
+
+First lets go log into the server by opening another terminal and ssh’ing to the server.
+
+ +
+[source,bash]
+----
+ssh ec2-user@serverIP
+----
+
+When you log in you should  now see
+
+You should see a prompt with your current username and the hostname of the machine you are logged into.
+
++
+[source,textinfo]
+----
+[ec2-user@node1 ~]$
+----
+
+== 1.5 Create ansibleuser on node1
+
+In this section we are going to create a dedicated account to use ansible with, and add them to the wheel (also known as the sudoers) group.
+
++
+[source,bash]
+----
+sudo adduser -m -G wheel ansibleuser
+----
+
+Then we will want to create a password for the ‘ansibleuser’
+
++
+[source,bash]
+----
+sudo passwd ansibleuser
+----
+
+And type the password ‘Passphrase4TheWin!’ and hit enter,
+You will not see anything change on the screen,
+You will have to enter it twice for it to be set.
+
+If everything went well you should see a screen something like this
+
++
+[source,textinfo]
+----
+passwd: all authentication tokens updated successfully.
+----
+
+Now you can type ‘exit’ to close your ssh session to node1.
+
++
+[source,bash]
+----
+sudo passwd ansibleuser
+----
+
+And now you should see your terminal prompt changed back to 
++
+[source,textinfo]
+----
+[lab-user@bastion ~]$ 
+----
+
+== 1.6 Push your ssh key to ansible user on node1
+
+
+Now we need to push our ‘lab-user’ ssh public key to node1.
+
+We will use the command ‘ssh-copy-id’ and the ip address of the machine we will be connecting to. 
+For my example I have a machine at 192.168.0.79, but you may have a different ip address.
+I would type ‘ssh-copy-id ansibleuser@192.168.0.79’
+
++
+[source,bash]
+----
+ssh-copy-id ansibleuser@serverIP
+----
+
+== 1.7 Snapshot of current systems with Bash
+
+== 1.8 Snapshot of current systems with Ansible facts
+
