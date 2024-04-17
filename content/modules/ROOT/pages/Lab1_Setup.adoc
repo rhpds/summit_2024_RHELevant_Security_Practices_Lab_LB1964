@@ -20,8 +20,8 @@ So first thing we need to do is to check the SSH key from our bastion host to ta
 
 There are 2 machines we will be connecting to.
 
-Your bastion host
-Your node host 
+* bastion
+* node
 
 == 1.2: Create a SSH key pair
 
