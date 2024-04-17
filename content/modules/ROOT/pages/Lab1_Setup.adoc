@@ -79,7 +79,14 @@ You should see a prompt with your current username and the hostname of the machi
 [ec2-user@node ~]$
 ----
 
-== 1.7 Snapshot of current systems with Bash
+You can now exit the node machine by typing,
 
-== 1.8 Snapshot of current systems with Ansible facts
+[source,textinfo]
+----
+exit
+----
+
+Which should take you back to your bastion host.
+
+Now we are ready to step into the next section.
 
