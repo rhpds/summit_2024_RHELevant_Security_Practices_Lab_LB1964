@@ -48,7 +48,7 @@ Next we see there are files in the directrory.
 
 You should now see 2 new files called ‘fnlngkey.pem’ and ‘fnlngkey.pub’
 
-+
+
 [source,textinfo]
 ----
 [lab-user@bastion ~]$ ls ~/.ssh/
@@ -63,7 +63,7 @@ On our server we have a different user we need to log in with and then create a 
 
 First lets go log into the server by opening another terminal and ssh’ing to the server.
 
- +
+ 
 [source,bash]
 ----
 ssh ec2-user@node
@@ -73,7 +73,7 @@ When you log in you should  now see
 
 You should see a prompt with your current username and the hostname of the machine you are logged into.
 
-+
+
 [source,textinfo]
 ----
 [ec2-user@node ~]$
