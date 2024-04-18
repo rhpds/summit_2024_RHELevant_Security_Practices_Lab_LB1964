@@ -182,6 +182,11 @@ ansible-playbook PPS_Gather_And_Report.yml
 
 This will run it on the localhost and write the report with the hostname and time dates stamp it was run for the file.
 
+You'll have a report that looks something like this.
 
+[source,ini,role=execute,subs=attributes+]
+----
+
+----
 
 
