@@ -1,0 +1,11 @@
+== Install and setup Ansible for Red Hat Enterprise Linux 9
+
+If you use Ansible content within Red Hat Enterprise Linux (RHEL), 
+you should know that important changes where made with RHEL 8.6 and 9.0.
+
+RHEL 7 and RHEL 8.0-8.5 customers have access to a separate Ansible Engine repository. 
+
+In RHEL 8.6 and 9.0, customers will have access to Ansible Core, which will be included in the corresponding AppStream repository. 
+
+The move to Ansible Core in RHEL is being made to adapt to changes in the Ansible project.
+
