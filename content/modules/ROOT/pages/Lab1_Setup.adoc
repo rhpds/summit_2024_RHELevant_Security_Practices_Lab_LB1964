@@ -46,13 +46,13 @@ ls ~/.ssh/
 
 Next we see there are files in the directrory.
 
-You should now see 2 new files called ‘fnlngkey.pem’ and ‘fnlngkey.pub’
+You should now see 2 randomly named files called ‘xxxxxxx.pem’ and ‘xxxxxxx.pub’
 
 
 [source,textinfo]
 ----
 [lab-user@bastion ~]$ ls ~/.ssh/
-authorized_keys  config  fnlngkey.pem  fnlngkey.pub 
+authorized_keys  config  xxxxxxx.pem  xxxxxxx.pub 
 ----
 
 
@@ -66,7 +66,7 @@ First lets go log into the server by opening another terminal and ssh’ing to t
  
 [source,bash]
 ----
-ssh ec2-user@node
+ssh ec2-user@node1
 ----
 
 When you log in you should  now see
@@ -76,7 +76,7 @@ You should see a prompt with your current username and the hostname of the machi
 
 [source,textinfo]
 ----
-[ec2-user@node ~]$
+[ec2-user@node1 ~]$
 ----
 
 You can now exit the node machine by typing,
