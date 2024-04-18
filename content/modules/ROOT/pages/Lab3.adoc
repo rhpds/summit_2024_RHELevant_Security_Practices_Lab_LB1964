@@ -1,13 +1,116 @@
-# Trust
+# baseline
 
 
 Lab Length
 Medium/Average (~10-20 mins)
 
 Goal
-SOME Goal
+Capture a consistant machine state
 
-Risk management is the process of identifying and assessing risks and creating a plan to minimize or control those risks and their potential impact on an organization. A risk is a potential for loss or damage. Risks can come from a variety of places such as legal liability, natural disasters, accidents, management errors, or cybersecurity threats.
+== 3.0 Capture machine baseline
+
+We need to capture starting point for our systems.
+
+There are a few different ways:
+
+* sosreport
+* bash script
+* Ansible facts
+* Insights
+* Satellite
+
+In this lab scenario we are working on an air-gapped system (Not connected to the internet).
+
+The first best way to do this is to use a built-in utility.
+
+We are go use the built in sos utility, aka sosreport.
+
+=== 3.1 Sos utility
+
+With the sos utility, you can collect configuration, diagnostic, and troubleshooting data, and provide those files to Red Hat Technical Support.
+This is a great way to help troubleshoot and see the system changes on your system.
+
+The sos utility allows to collect various debugging information from one or more systems, optionally clean sensitive data, and upload it in a form of a report to Red Hat.
+More specifically, the three sos components do the following:
+
+* '''sos report''' collects debugging information from one system.
+
+* '''sos collect''' allows to run and collect individual sos reports from a specified set of nodes.
+
+* '''sos clean''' obfuscates potentially sensitive information such as user names, host names, IP or MAC addresses, or other user-specified data.
+
+The information collected in a report contains configuration details, system information, and diagnostic information from a RHEL system, such as:
+
+* The running kernel version
+* Loaded kernel modules
+* System and service configuration files
+* Diagnostic command output
+* A list of installed packages
+
+The sos utility writes the data it collects to an archive named sosreport-<host_name>-<support_case_number>-<YYYY-MM-DD>-<unique_random_characters>.tar.xz
+
+So if you work in an airgapped environment, you can still collect and send data to Red Hat or to your Own IT group.
+
+=== 3.2 Installing the sos package from the command line
+
+To use the sos utility, install the sos package.
+
+**Prerequisites**
+
+You need 'root' privileges.
+
+**Procedure**
+
+Install the 'sos' package.
+
+[source,ini,role=execute,subs=attributes+]
+----
+sudo dnf install sos
+----
+
+**Verification steps**
+
+Use the rpm utility to verify that the sos package is installed.
+
+[source,ini,role=execute,subs=attributes+]
+----
+sudo rpm -q sos
+sos-4.2-15.el9.noarch
+----
+
+=== 3.3. Generating an sos report from the command line
+
+Use the 'sos report' command to gather an sos report from a RHEL server.
+
+**Prerequisites**
+
+* You have installed the sos package.
+* You need root privileges.
+
+**Procedure**
+
+Run the sos report command and follow the on-screen instructions.
+
+You can add the --upload option to transfer the sos report to Red Hat immediately after generating it.
+
+[source,ini,role=execute,subs=attributes+]
+----
+sudo sos report
+----
+
+=== 3.3.1 (Optional) If you have already opened a Technical Support case with Red Hat,
+enter the case number to embed it in the sos report file name,
+and it will be uploaded to that case if you specified the --upload option.
+
+If you do not have a case number, leave this field blank.
+Entering a case number is optional and does not affect the operation of the sos utility.
+
+=== 3.4 Take note of the sos report file name displayed at the end of the console output.
+
+i.e. /var/tmp/sosreport-bastion-2024-04-15-outurcc.tar.xz
+
+
+
 
 == 3.1 Default to secure posture
 
