@@ -15,7 +15,7 @@ Before we get hand on the box, we need to talk about Risk, Frameworks, and what 
 
 First lets go for definitions.
 
-=== 2.1 GRC stands for Governance, Risk, and Compliance. 
+=== 2.1  Governance, Risk, and Compliance (aka GRC)
 
 It's a framework or approach that organizations use to manage and align their business activities with their objectives, manage risk effectively, and comply with regulations and standards.
 
@@ -72,5 +72,19 @@ While both cause business impacts, one is potentally life threating.
 
 Both are catastrophic issues if there are no backup and tested restores process for the vital business data. 
 
-== 2.4 Frameworks
+== 2.4 Compliance Frameworks
+
+There are a lot of different frameworks out there.
+
+* PCI DSS 
+* CIS Controls
+* ATT&CK 
+* NIST Cybersecurity Framework
+* Etc.
+
+For more info, check out our page on https://access.redhat.com/articles/compliance_activities_and_gov_standards[Compliance Activities and Government Standards].
+
+
+
+
 
