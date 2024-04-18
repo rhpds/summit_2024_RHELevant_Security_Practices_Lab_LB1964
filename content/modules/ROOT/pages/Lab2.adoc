@@ -1,66 +1,73 @@
-# Managing Risk & Threat Models
+# Managing Risk & Security Framework
 
 
 Lab Length
 Medium/Average (~10-20 mins)
 
 Goal
-Scoping our lab risk
+Scoping our lab needs for with Risk and Security Frameworks
 
-== Lab 2. Managing Risk & Threat Models
+== Lab 2. Why adress Risk & Security Framework?
+
+
 
 Before we get hand on the box, we need to talk about Risk, Frameworks, and what your are trying to protect yourself from.
 
 First lets go for definitions.
 
-* **Risk management** is the process of identifying and assessing risks and creating a plan to minimize or control those risks and their potential impact on an organization. 
+=== 2.1 GRC stands for Governance, Risk, and Compliance. 
 
-* **Risk** is a potential for loss or damage. Risks can come from a variety of places such as legal liability, natural disasters, accidents, management errors, or cybersecurity threats.
+It's a framework or approach that organizations use to manage and align their business activities with their objectives, manage risk effectively, and comply with regulations and standards.
 
-* **Framework** 
+* **Governance**: Refers to the structure of rules, processes, and decision-making within an organization to ensure that objectives are achieved, risks are managed appropriately, and resources are used responsibly.
 
-== 2.1 Risk management steps
+* **Risk Management**: Involves identifying, assessing, and mitigating risks that could potentially hinder the achievement of organizational goals. This includes financial risks, operational risks, legal risks, and more.
+
+* **Compliance**: Ensures that organizations adhere to relevant laws, regulations, standards, and internal policies that are applicable to their industry and operations. Compliance efforts aim to prevent legal issues, regulatory fines, and reputational damage.
+
+GRC helps organizations integrate these three elements into their operations to create a structured approach to managing the complexities of running a business while staying in line with legal and ethical standards.
+ 
+
+== 2.2 Risk management steps
 
 Regardless of the Framework you need to apply, most start with identification.
 
-=== 2.1.1 Risk identification
+* **Risk identification**
 
 Identify and describe potential risks. Types of risks could include financial risks, operational risks (such as risks to a supply chain), project risks, business risks, and market risks—among others. Identified risks should be recorded in a risk register or be documented in some way.
 
-=== 2.1.2 Risk analysis
+* **Risk analysis**
 
 Determine the probability of a new risk happening by analyzing the risk factors and documenting potential consequences.
 
-=== 2.1.3 Risk assessment and evaluation
+* **Risk assessment and evaluation**
 
 Using internal audits and risk analysis, determine the magnitude of a risk. You’ll also need to decide what level of risk is acceptable, and what needs to be dealt with immediately.  
 
-=== 2.1.4 Risk mitigation
+* **Risk mitigation**
+
 Once you’ve determined the priority and importance of risks, you can proceed with a risk response strategy to minimize or control the risk. 
 
-=== 2.1.5 Risk monitoring
+* **Risk monitoring**
+
 Risks and metrics need to be continuously monitored to make sure that risk mitigation plans are working, or to keep you aware if a risk becomes a greater threat.
 
-== 2.2 Risk management approaches
-
-The main risk management approaches include avoidance, reduction, sharing, and retention.
-
-=== 2.2.1 Risk avoidance
-
-Risk avoidance involves stopping and avoiding any activities that could lead to a risk.
-
-=== 2.2.2 Risk reduction
-
-Risk reduction is focused on actions that will reduce the probability of a risk occurring or the impact of a risk.
-
-=== 2.2.3 Risk sharing
-
-Risk sharing is when an organization will transfer or share part of the risk with another organization. An example is outsourcing manufacturing or customer service functions to a third party.
-
-=== 2.2.4 Risk retention
-
-Risk retention occurs when risks have been evaluated and the organization decides to accept the potential risk. No action is taken to mitigate the risk, but a contingency plan may still be put in place.
 
 == Risk Management Examples
 
 
+=== Ransonware
+
+* A hospital can't treat patients because ransomware attacked and their IT infrastructure is not accessable unless they pay.
+
+* An local ice cream parler can't access thier point of sales system due to ransomware.
+
+While both cause business impacts, one is potentally life threating.
+
+=== Data Loss
+
+* A local dentist office burns down due to an electrical fire along with all their customers medical record.
+
+* A research and development lab developing and supporting equiptment that is used around the world for 20+ years, have an old machine that thier legacy software runs on, and the ancient hard drive dies.
+
+Both are catastrophic issues if there are no backup and tested restores process for the vital business data. 
