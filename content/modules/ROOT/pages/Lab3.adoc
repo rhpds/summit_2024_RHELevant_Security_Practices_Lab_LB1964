@@ -14,10 +14,9 @@ We need to capture starting point for our systems.
 There are a few different ways:
 
 * sosreport
-* bash script
 * Ansible facts
-* Insights
-* Satellite
+* Insights (out of scope for this lab)
+* Satellite (out of scope for this lab)
 
 In this lab scenario we are working on an air-gapped system (Not connected to the internet).
 
