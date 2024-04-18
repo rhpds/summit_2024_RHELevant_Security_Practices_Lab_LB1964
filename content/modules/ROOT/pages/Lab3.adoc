@@ -189,7 +189,22 @@ You'll have a report that looks something like this.
 
 [source,ini,role=execute,subs=attributes+]
 ----
+System Report - Generated on 2024-04-18T12:38:20Z
 
+Hostname: bastion
+
+OS Version: RedHat 9.3
+
+Network Info: 192.168.0.11
+
+Open Ports, Protocols, and Running Services:
+Netid State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess
+udp   UNCONN 0      0          127.0.0.1:323       0.0.0.0:*          
+udp   UNCONN 0      0              [::1]:323          [::]:*          
+tcp   LISTEN 0      128          0.0.0.0:22        0.0.0.0:*          
+tcp   LISTEN 0      128             [::]:22           [::]:*          
+tcp   LISTEN 0      4096               *:443             *:*          
+tcp   LISTEN 0      4096               *:9090            *:*          
 ----
 
 
