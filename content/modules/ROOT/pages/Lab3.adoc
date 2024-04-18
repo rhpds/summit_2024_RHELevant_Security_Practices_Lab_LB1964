@@ -1,8 +1,8 @@
-# baseline
+# Creating a system baseline
 
 
 Lab Length
-Medium/Average (~10-20 mins)
+Medium/Average (~5-10 mins)
 
 Goal
 Capture a consistant machine state
