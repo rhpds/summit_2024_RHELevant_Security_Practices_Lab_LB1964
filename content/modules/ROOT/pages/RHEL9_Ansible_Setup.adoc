@@ -9,3 +9,17 @@ In RHEL 8.6 and 9.0, customers will have access to Ansible Core, which will be i
 
 The move to Ansible Core in RHEL is being made to adapt to changes in the Ansible project.
 
+
+
+== Reference Documentation
+
+https://www.redhat.com/en/blog/updates-using-ansible-rhel-86-and-90[Updates to using Ansible in RHEL 8.6 and 9.0]
+
+https://www.redhat.com/en/blog/updates-using-ansible-core-in-rhel[Updates to using Ansible Core in Red Hat Enterprise Linux]
+
+https://access.redhat.com/articles/6393321[Using Ansible in RHEL 9]
+
+https://access.redhat.com/articles/3050101[Red Hat Enterprise Linux (RHEL) System Roles]
+
+
+
