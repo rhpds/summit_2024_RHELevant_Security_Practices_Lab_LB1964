@@ -74,7 +74,6 @@ Use the rpm utility to verify that the sos package is installed.
 [source,ini,role=execute,subs=attributes+]
 ----
 sudo rpm -q sos
-sos-4.2-15.el9.noarch
 ----
 
 === 3.3. Generating an sos report from the command line
@@ -111,6 +110,10 @@ i.e. /var/tmp/sosreport-bastion-2024-04-15-outurcc.tar.xz
 === 3.5 Capturing Ports, Protocalls, and Services with Anisble
 
 Here's an example of an Ansible playbook that gathers facts from a RHEL 9 machine and creates a report with hardware information, software, services, and system details along with the current date, open your favorite text editor, and create a file named 'PPS_Gather_And_Report.yml'
+
+In this example we will use Vi text editor.
+
+
 
 [source,ini,role=execute,subs=attributes+]
 ----
@@ -154,7 +157,7 @@ Here's an example of an Ansible playbook that gathers facts from a RHEL 9 machin
 
 Save and exit that file.
 
-Then open your favorite text editor, and create a jinja2 template  named 'Jreport_template.j2'
+Then open your favorite text editor, and create a jinja2 template  named 'report_template.j2'
 
 [source,ini,role=execute,subs=attributes+]
 ----
