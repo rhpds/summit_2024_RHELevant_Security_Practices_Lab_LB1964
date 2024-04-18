@@ -7,9 +7,7 @@ Medium/Average (~10-20 mins)
 Goal
 Scoping our lab needs for with Risk and Security Frameworks
 
-== Lab 2. Why adress Risk & Security Framework?
-
-
+== Lab 2. Why address risk & security frameworks?
 
 Before we get hand on the box, we need to talk about Risk, Frameworks, and what your are trying to protect yourself from.
 
@@ -25,8 +23,16 @@ It's a framework or approach that organizations use to manage and align their bu
 
 * **Compliance**: Ensures that organizations adhere to relevant laws, regulations, standards, and internal policies that are applicable to their industry and operations. Compliance efforts aim to prevent legal issues, regulatory fines, and reputational damage.
 
-GRC helps organizations integrate these three elements into their operations to create a structured approach to managing the complexities of running a business while staying in line with legal and ethical standards.
- 
+GRC helps organizations integrate these three elements into their operations to create a structured approach to managing the complexities of running a business while staying in line with legal and ethical standards. That being said, it takes a culture shift to make these changes. Not only the adopotion, but the impelmentation and standardization. 
+
+TL;DR
+
+* Governance - Making and enforcing Business decsions
+* Risk - Exposure to danger from loss or harm
+* Compliance - Fulfilling requirements from regulation and standards
+* Culture - Shared Values, attitudes, goals and practices
+
+
 
 == 2.2 Risk management steps
 
@@ -84,6 +90,61 @@ There are a lot of different frameworks out there.
 
 For more info, check out our page on https://access.redhat.com/articles/compliance_activities_and_gov_standards[Compliance Activities and Government Standards].
 
+== 2.5 How do you pick the right framework?
+
+You have to analyse your risk and pick the one that best fits your org.
+
+That being said, a lot of organisations use and reference the NIST Cybersecurity Framework (CFS).
+
+As of Feb 26th 2024 NIST's released CSF version 2.0.
+
+* It's now 32 pages.
+* Now have Community Profiles which acts as a 
+** baseline of CSF outcomes that is created and published to address shared interests and goals among a number of organizations. 
+** typically developed for a particular sector, subsector, technology, threat type, or other use case. 
+** An organization can use a Community Profile as the basis for its own Target Profile.
+** Examples of https://www.nist.gov/quick-start-guides[Community Profiles can be found on the NIST CSF website].
+
+== 2.6 How is the NIST CSF Connected with RHEL Hardening?
+
+The NIST Cybersecurity Framework (CSF) and the Red Hat Enterprise Linux (RHEL) 9 Security Technical Implementation Guide (STIG) are both important resources in the field of cybersecurity, but they serve slightly different purposes and have different scopes.
+
+=== 2.6.1 NIST Cybersecurity Framework (CSF):
+
+* The NIST CSF is a set of guidelines, standards, and best practices designed to help organizations manage and improve their cybersecurity posture. It provides a framework for organizations to assess and improve their cybersecurity risk management processes.
+
+* The CSF is not specific to any particular technology or platform but offers a flexible structure that can be applied across various industries and organizational contexts.
+
+* It consists of five core functions: Identify, Protect, Detect, Respond, and Recover, which provide a high-level framework for organizing cybersecurity activities.
+Red Hat Enterprise Linux 9 Security Technical Implementation Guide (STIG):
+
+=== 2.6.2 Red Hat Enterprise Linux (RHEL) 9 Security Technical Implementation Guide (STIG)
+
+* A STIG is a set of guidelines and configuration standards developed by the Defense Information Systems Agency (DISA) for securing computer systems and software.
+
+* The RHEL 9 STIG specifically provides detailed security configuration requirements and recommendations for securing Red Hat Enterprise Linux 9 systems.
+
+* It covers a wide range of security controls and settings, including network configuration, user authentication, file permissions, logging, and many others.
+
+* The STIG is typically used by government agencies and organizations that need to comply with stringent security requirements, especially those related to the U.S. Department of Defense (DoD).
+
+=== 2.6.3 Wrap up definition 
+
+While the NIST CSF provides a high-level framework for cybersecurity risk management, the RHEL 9 STIG offers detailed guidance on implementing security controls specific to Red Hat Enterprise Linux 9 systems. 
+
+Organizations can use the CSF to establish their cybersecurity policies and objectives and then use resources like the RHEL 9 STIG to implement specific security measures aligned with those objectives on their RHEL 9 systems. 
+
+In this way, the NIST CSF and the RHEL 9 STIG can complement each other in helping organizations improve their overall cybersecurity posture.
+
+Now that we have theory and definition out of the way.
+
+Just because have have picked a framework, this does not mean that we are 100% safe or protected.
+
+We will see a few example of how the Framework does not secure the machine, more on that later in the lab workshops.
+
+We will be using the RHEL 9 STIG with ansible to harden on our systems, with the understanding that we will have to make some changes for our test lab environment. 
+
+Now It's time to step to the next part of the workshop by creating an inventory of our current system.
 
 
 
