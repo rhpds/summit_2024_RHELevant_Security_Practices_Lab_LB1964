@@ -180,3 +180,24 @@ You will want to test that bastion ssh key works to connect to your node1 machin
 ----
 ssh root@node1IPADDRESS
 ----
+
+When you log in you should  now see
+
+You should see a prompt with your current username and the hostname of the machine you are logged into.
+
+
+[source,textinfo]
+----
+[root@node1 ~]$
+----
+
+You can now exit the node machine by typing,
+
+[source,textinfo]
+----
+exit
+----
+
+Which should take you back to your bastion host.
+
+Now we are ready to step into the next section.
