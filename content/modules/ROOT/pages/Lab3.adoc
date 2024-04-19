@@ -131,6 +131,11 @@ The original sos report or sos collect stays unchanged, and a new *-obfuscated.t
 ** You can add the --keywords option to additionally clean a given list of keywords.
 ** You can add the --usernames option to obfuscate further sensitive user names.
 
+[source,ini,role=execute,subs=attributes+]
+----
+sudo sos clean --archive-type tarball /var/tmp/sosreport-bastion-2024-04-19-unczult.tar.xz
+----
+
 The automatic user name cleaning will automatically run for users reported through the lastlog file for users with an UID of 1000 and above. This option is used for LDAP users that may not appear as an actual login, but may occur in certain log files.
 
 **Verification steps**
@@ -138,7 +143,14 @@ The automatic user name cleaning will automatically run for users reported throu
 * Verify that the sos clean command created an obfuscated archive and an obfuscation mapping in the /var/tmp/ directory matching the description from the command output.
 * Check the *-private_map file for the obfuscation mapping
 
+It should give you a path to both files created, 
+as an example
 
+A mapping of obfuscated elements is available at
+        /var/tmp/sosreport-bastion-2024-04-19-unczult-private_map
+
+The obfuscated archive is available at
+        /var/tmp/sosreport-bastion-2024-04-19-unczult-obfuscated.tar.xz
 
 === 3.6 Capturing Ports, Protocalls, and Services with Anisble
 
