@@ -1,0 +1,88 @@
+== Establishing trust
+
+Create a anisble playbook for rhel 9 that checks for 
+* users 
+* groups
+* shadow file
+* sudoers
+* selinux status
+* enabled repos
+* patch level
+
+
+vi trust_baseline.yml
+
+[source,ini,role=execute,subs=attributes+]
+----
+---
+- name: Check System Configuration and Generate Report
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Check for Users
+      command: cat /etc/passwd
+      register: users_output
+
+    - name: Check for Groups
+      command: cat /etc/group
+      register: groups_output
+
+    - name: Check for Shadow File
+      command: cat /etc/shadow
+      register: shadow_output
+
+    - name: Check for Sudoers File
+      command: cat /etc/sudoers
+      register: sudoers_output
+
+    - name: Check SELinux Status
+      command: getenforce
+      register: selinux_status
+
+    - name: Check Enabled Repositories
+      command: yum repolist enabled
+      register: enabled_repos_output
+
+    - name: Check Patch Level
+      command: yum history
+      register: yum_history_output
+
+    - name: Generate Report
+      template:
+        src: system_report.j2
+        dest: system_report.txt
+----
+
+Then Lets output all that to a Jinja2 template file named system_report.j2 with the formatting you desire. 
+
+Here's an example of what it might look like:
+
+vi system_report.j2
+
+
+[source,ini,role=execute,subs=attributes+]
+----
+System Report:
+
+Users:
+{{ users_output.stdout }}
+
+Groups:
+{{ groups_output.stdout }}
+
+Shadow File:
+{{ shadow_output.stdout }}
+
+Sudoers File:
+{{ sudoers_output.stdout }}
+
+SELinux Status:
+{{ selinux_status.stdout }}
+
+Enabled Repositories:
+{{ enabled_repos_output.stdout }}
+
+Patch Level:
+{{ patch_level_output.stdout }}
+
+----
