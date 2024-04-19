@@ -73,7 +73,7 @@ I also then like bring in a deafult ansible config file for later use.
 
 [source,ini,role=execute,subs=attributes+]
 ----
-ansible-config init --disabled > ansible.cfg
+ansible-config init --disabled > ~/ansible/ansible.cfg
 ----
 
 We also need to create an inventory file to refference.
@@ -107,6 +107,42 @@ YourNode1IPaddress 192.168.122.185
 Save and close the file
 
 
+=== Basic Ansible smoke ping test
+
+Lets make sure we can connect to both our machines
+
+first lets change dirrectories to our working folder
+
+[source,ini,role=execute,subs=attributes+]
+----
+cd ~/ansible
+----
+
+Then issue a command to check the localhost (bastion) machine
+
+[source,ini,role=execute,subs=attributes+]
+----
+ansible -m ping -i inventory localhost
+----
+
+Then issue a command to check the localhost (bastion) machine
+[source,ini,role=execute,subs=attributes+]
+----
+ansible -m ping -i inventory node1
+----
+
+If everything is working correctly you should see something like this in your terminal
+
+[source,ini,role=execute,subs=attributes+]
+----
+machinehostname | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+---- 
 
 == Reference Documentation
 
