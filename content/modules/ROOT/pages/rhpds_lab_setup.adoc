@@ -1,4 +1,4 @@
-# Lab1 SSH Setup
+# RHPDS Lab Setup
 
 
 Lab Length
