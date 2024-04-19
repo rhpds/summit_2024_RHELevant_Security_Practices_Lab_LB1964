@@ -1,6 +1,6 @@
 * xref:rhpds_lab_setup.adoc[RHPDS Lab Setup]
 ** xref:kvm_lab_for_local_testing.adoc[KVM for Local testing]
-** xref:RHEL9_Ansible_Setup.adoc[Ansible 101]
+** xref:ansible_101.adoc[Ansible 101]
 * xref:Lab2.adoc[Theory, Threats, and Tools]
 * xref:Lab3.adoc[Creating a system baseline]
 * xref:Lab3.adoc[Trust]
