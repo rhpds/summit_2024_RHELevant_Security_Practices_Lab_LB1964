@@ -56,7 +56,7 @@ authorized_keys  config  xxxxxxx.pem  xxxxxxx.pub
 ----
 
 
-== 1.4 Logging onto the server 
+== 1.3 Logging onto node1 
 
 Up to this point we have been using the lab-user account.
 On our server we have a different user we need to log in with and then create a dedicated account for our automation services.
@@ -87,6 +87,25 @@ exit
 ----
 
 Which should take you back to your bastion host.
+
+== 1.4 Install Cockpit Project
+
+We are going to install Cockpit on our bastion machine, which gives us a website to admin our linux system.
+
+Open a terminal on your host machine, and type
+
+[source,ini,role=execute,subs=attributes+]
+----
+sudo yum install cockpit -y
+----
+
+Later in the instructions we will start the service with the command below.
+We are leaving it off for now to opimize your machine resources.
+
+[source,ini,role=execute,subs=attributes+]
+----
+sudo systemctl enable --now cockpit.socket
+----
 
 Now we are ready to step into the next section.
 
