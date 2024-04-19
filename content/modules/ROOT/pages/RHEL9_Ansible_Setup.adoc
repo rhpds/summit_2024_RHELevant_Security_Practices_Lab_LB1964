@@ -101,7 +101,7 @@ localhost
 
 
 [nodes]
-YourNode1IPaddress
+YourNode1IPaddress 192.168.122.185
 
 ----
 Save and close the file
