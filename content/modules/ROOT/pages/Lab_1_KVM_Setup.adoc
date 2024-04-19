@@ -112,7 +112,7 @@ In your terminal
 
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo cp /var/lib/libvirt/images/rhel-9.3-x86_64-kvm.qcow2 /var/lib/libvirt/images/node-rhel-9.3-x86_64-kvm.qcow2
+sudo cp /var/lib/libvirt/images/rhel-9.3-x86_64-kvm.qcow2 /var/lib/libvirt/images/node1-rhel-9.3-x86_64-kvm.qcow2
 ----
 
 Then we will want to customize the kvm image with the following command.
@@ -121,10 +121,10 @@ Then set a root password into the image
 
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo virt-customize -a /var/lib/libvirt/images/node-rhel-9.3-x86_64-kvm.qcow2 --root-password password:MySecurePassphrasefor2024 --uninstall cloud-init
+sudo virt-customize -a /var/lib/libvirt/images/node1-rhel-9.3-x86_64-kvm.qcow2 --root-password password:MySecurePassphrasefor2024 --uninstall cloud-init
 ----
 
-=== 1.5.3
+=== 1.5.3 Configure Cockpit with storage
 
 * Open a web browser like firefox or chrome
 * In the address bar go to **localhost:9090**
@@ -142,3 +142,41 @@ sudo virt-customize -a /var/lib/libvirt/images/node-rhel-9.3-x86_64-kvm.qcow2 --
 **** In the **Type** field keep the **Filesystem Directory**,
 **** In the **Target path** field type **/var/lib/libvirt/images/**
 **** And make sure the **Startup** is checked.
+**** Click the **Create** Button.
+
+=== 1.5.4 Configure Cockpit for Virtual Machines
+
+* On the left hand side find and click **Virtual machines**,
+** In the top Right side click the **Import VM**
+*** In the Name feild we want to use **node1**
+*** On the Connections option we want to make sure that **System** is selected
+*** On the Disk image we want to use this path **/var/lib/libvirt/images//var/lib/libvirt/images/node1-rhel-9.3-x86_64-kvm.qcow2**
+*** On Operation system choose Red Hat Enterprise Linux 9
+*** On Memory go with the default 2 GB of Ram
+*** Then Click the **Import and Run** 
+
+This should bring you back to the **Virtual machines** with a new entery for node1.
+
+Click on that node and you should see and Overview, Usage and Console window.
+
+Click on the Console window, and log in with your root user and password.
+
+username: root
+password: MySecurePassphrasefor2024
+
+Then you will want to find out what the ip address is for node1,
+In the console type
+
+[source,ini,role=execute,subs=attributes+]
+----
+ip addr
+----
+
+Take note of the IP address, then open a terminal on your **bastion** machine.
+
+You will want to test that bastion ssh key works to connect to your node1 machine.
+
+[source,ini,role=execute,subs=attributes+]
+----
+ssh root@node1IPADDRESS
+----
