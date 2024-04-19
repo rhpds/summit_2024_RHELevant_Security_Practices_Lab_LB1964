@@ -174,7 +174,7 @@ ip addr
 
 Take note of the IP address, then open a terminal on your **bastion** machine.
 
-=== 1.5.5 Create a SSH key pair
+=== 1.6 Create a SSH key pair
 
 From your bastion host, open a terminal
 
@@ -238,7 +238,7 @@ The key's randomart image is:
 <<< OUTPUT ABRIDGED >>>
 ----
 
-=== 1.5.6 Verifying Key Pair Creation
+=== 1.7 Verifying Key Pair Creation
 
 Now lets make sure we can see the newly created ssh keypair.
 
@@ -258,6 +258,8 @@ You should now see 2 new files called ‘id_rsa’ and ‘id_rsa.pub’
 [lab-user@bastion ~]$ ls ~/.ssh/
 authorized_keys  config   id_rsa  id_rsa.pub
 ----
+
+=== 1.8 Verifying ssh keys work
 
 
 You will want to test that bastion ssh key works to connect to your node1 machine.
