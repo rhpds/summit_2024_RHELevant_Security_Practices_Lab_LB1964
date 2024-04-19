@@ -48,8 +48,6 @@ The information collected in a report contains configuration details, system inf
 
 The sos utility writes the data it collects to an archive named sosreport-<host_name>-<support_case_number>-<YYYY-MM-DD>-<unique_random_characters>.tar.xz
 
-So if you work in an airgapped environment, you can still collect and send data to Red Hat or to your Own IT group.
-
 === 3.1 Installing the sos package from the command line
 
 To use the sos utility, install the sos package.
@@ -107,7 +105,42 @@ Entering a case number is optional and does not affect the operation of the sos 
 
 i.e. /var/tmp/sosreport-bastion-2024-04-15-outurcc.tar.xz
 
-=== 3.5 Capturing Ports, Protocalls, and Services with Anisble
+=== 3.5 Cleaning an sos report
+
+If you work in an airgapped environment, you can still collect and send data to Red Hat or to your Own IT group 
+
+The sos utility offers a routine to obfuscate potentially sensitive data, such as 
+
+* user names
+* host names
+* IP Addresses 
+* MAC addresses
+* other user-specified keywords. 
+
+The original sos report or sos collect stays unchanged, and a new *-obfuscated.tar.xz file is generated and intended to be shared with a third party.
+
+**Prerequisites** 
+
+* You have generated an sos report or an sos collect tarball.
+* (Optional) You have a list of specific keywords beyond the user names, host names, and other data you want to obfuscate.
+
+
+**Procedure**
+
+* Run the sos clean command on either an sos report or sos collect tarball and follow the on-screen instructions.
+** You can add the --keywords option to additionally clean a given list of keywords.
+** You can add the --usernames option to obfuscate further sensitive user names.
+
+The automatic user name cleaning will automatically run for users reported through the lastlog file for users with an UID of 1000 and above. This option is used for LDAP users that may not appear as an actual login, but may occur in certain log files.
+
+**Verification steps**
+
+* Verify that the sos clean command created an obfuscated archive and an obfuscation mapping in the /var/tmp/ directory matching the description from the command output.
+* Check the *-private_map file for the obfuscation mapping
+
+
+
+=== 3.6 Capturing Ports, Protocalls, and Services with Anisble
 
 Here's an example of an Ansible playbook that gathers facts from a RHEL 9 machine and creates a report with hardware information, software, services, and system details along with the current date, open your favorite text editor, and create a file named 'PPS_Gather_And_Report.yml'
 
