@@ -38,7 +38,7 @@ To learn more about ansible check out the Official https://docs.ansible.com/ansi
 We are going to make sure you can get Ansible Installed on RHEL 9.
 
 
-=== Install and setup Ansible for Red Hat Enterprise Linux 9
+=== Install Ansible for Red Hat Enterprise Linux 9
 
 If you use Ansible content within Red Hat Enterprise Linux (RHEL), 
 you should know that important changes where made with RHEL 8.6 and 9.0.
@@ -56,8 +56,56 @@ You'll be using Ansible core with RHEL 9, so lets get it installed.
 
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo dnf install ansible-core
+sudo dnf install ansible-core -y
 ----
+
+
+=== Basic Ansible setup for Red Hat Enterprise Linux 9
+
+I like to create a working directory to work on my ansible projects in my home folder
+
+[source,ini,role=execute,subs=attributes+]
+----
+mkdir ~/ansible
+----
+
+I also then like bring in a deafult ansible config file for later use.
+
+[source,ini,role=execute,subs=attributes+]
+----
+ansible-config init --disabled > ansible.cfg
+----
+
+We also need to create an inventory file to refference.
+
+The inventory file is where we list our machines we will connect to.
+
+In this lab we will connect to 
+
+* bastion
+* node1
+
+To Create the most simple inventory file use your favorite editer,
+
+[source,ini,role=execute,subs=attributes+]
+----
+vi ~/ansible/inventory
+----
+
+Once you have the file opened past the following
+
+[source,ini,role=execute,subs=attributes+]
+----
+[bastion]
+localhost
+
+
+[nodes]
+YourNode1IPaddress
+
+----
+Save and close the file
+
 
 
 == Reference Documentation
