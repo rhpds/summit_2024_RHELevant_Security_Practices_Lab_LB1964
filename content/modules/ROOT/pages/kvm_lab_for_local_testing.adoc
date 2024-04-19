@@ -126,7 +126,7 @@ sudo virt-customize -a /var/lib/libvirt/images/node1-rhel-9.3-x86_64-kvm.qcow2 -
 
 You will also need to create a user to connect with over ssh since root is disabled by default in rhel 9.
 
-To keep usernames and permissions the same for the rest of the lab, we will set up a user called "ecs-user"
+To keep usernames and permissions the same for the rest of the lab, we will set up a user called "ec2-user"
 
 
 
