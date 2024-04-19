@@ -174,6 +174,92 @@ ip addr
 
 Take note of the IP address, then open a terminal on your **bastion** machine.
 
+=== 1.5.5 Create a SSH key pair
+
+From your bastion host, open a terminal
+
+You should see a prompt with your current username and the hostname of the machine you are logged into.
+
+[source,ini,role=execute,subs=attributes+]
+----
+[lab-user@bastion ~]$
+----
+
+
+We want to find out if the current machine has any ssh keys under the users ‘.ssh’ directory. 
+
+[source,ini,role=execute,subs=attributes+]
+----
+ls ~/.ssh/
+----
+
+‘ls’ is going to list the files under the directory /home/username/.ssh
+
+Next we want to create our own ssh-keypair, to do this using the following command.
+
+[source,bash,role=execute,attributes+]
+----
+ssh-keygen
+----
+
+This creates an interactive shell asking you a few questions.
+The first question is where do you want the key pair saved?
+We want to go with the default location, so hit the enter button on your keyboard.
+
+Next question is ‘Enter Passphrase” for your ssh key pair,
+If your environment requires a password on your ssh keypairs, I’ll have a supplemental ssh_advance  section at the end of the lab for you to go through.
+We are going to go default without a password.
+On your keyboard, hit enter twice.
+
+Then on the screen will be a message that says something like.
+
+[source,textinfo]
+----
+
+<<< OUTPUT ABRIDGED >>>
+
+Your identification has been saved in /home/lab-user/.ssh/id_rsa
+Your public key has been saved in /home/lab-user/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:5Z8GpqUSojEcZWvtspDVefI5YIVajUr3+HTVi3HcE+4 lab-user@bastion.fnlng.internal
+The key's randomart image is:
++---[RSA 3072]----+
+|    o  +.    o o.|
+|   o.+=o.   o =..|
+|  ..+=Bo. .. + o.|
+| . =oo.=o+. . o  |
+|  * o ooS.=    E |
+|   = + ..* o .   |
+|  . . . o   +    |
+|       .   .     |
+|                 |
++----[SHA256]-----+
+
+<<< OUTPUT ABRIDGED >>>
+----
+
+=== 1.5.6 Verifying Key Pair Creation
+
+Now lets make sure we can see the newly created ssh keypair.
+
+We want to find out if the current machine has any ssh keys under the users ‘.ssh’ directory. 
+
++
+[source,bash]
+----
+ls ~/.ssh/
+----
+
+You should now see 2 new files called ‘id_rsa’ and ‘id_rsa.pub’
+
++
+[source,textinfo]
+----
+[lab-user@bastion ~]$ ls ~/.ssh/
+authorized_keys  config   id_rsa  id_rsa.pub
+----
+
+
 You will want to test that bastion ssh key works to connect to your node1 machine.
 
 [source,ini,role=execute,subs=attributes+]
