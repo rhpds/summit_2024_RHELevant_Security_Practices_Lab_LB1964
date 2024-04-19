@@ -128,6 +128,19 @@ You will also need to create a user to connect with over ssh since root is disab
 
 To keep usernames and permissions the same for the rest of the lab, we will set up a user called "ec2-user"
 
+[source,ini,role=execute,subs=attributes+]
+----
+useradd -m -g wheel ec2-user
+----
+
+and we will set a password 
+
+[source,ini,role=execute,subs=attributes+]
+----
+passwd ec2-user
+
+LetMeIn1
+----
 
 
 === 1.5.3 Configure Cockpit with storage
