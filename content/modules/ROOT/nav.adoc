@@ -1,5 +1,4 @@
-* xref:Lab_Setup.adoc[Lab Setup]
-** xref:Lab1_Setup.adoc[RHPDS/AWS Setup]
+* xref:rhpds_lab_setup.adoc[RHPDS Lab Setup]
 ** xref:Lab_1_KVM.adoc[KVM for Local testing]
 ** xref:RHEL9_Ansible_Setup.adoc[Ansible 101]
 * xref:Lab2.adoc[Theory, Threats, and Tools]
