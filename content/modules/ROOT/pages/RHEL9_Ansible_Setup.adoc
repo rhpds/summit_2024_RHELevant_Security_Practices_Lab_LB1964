@@ -1,4 +1,43 @@
-== Install and setup Ansible for Red Hat Enterprise Linux 9
+== Ansible 101
+
+=== Introduction to Ansible
+
+Ansible provides open-source automation that reduces complexity and runs everywhere. 
+
+Using Ansible lets you automate virtually any task. 
+
+Here are some common use cases for Ansible:
+
+* Eliminate repetition and simplify workflows
+* Manage and maintain system configuration
+* Continuously deploy complex software
+* Perform zero-downtime rolling updates
+
+Ansible uses simple, human-readable scripts called playbooks to automate your tasks. 
+
+You declare the desired state of a local or remote system in your playbook. 
+
+Ansible ensures that the system remains in that state.
+
+As automation technology, Ansible is designed around the following principles:
+
+* **Agent-less architecture** 
+** Low maintenance overhead by avoiding the installation of additional software across IT infrastructure.
+
+* **Simplicity**
+** Automation playbooks use straightforward YAML syntax for code that reads like documentation. Ansible is also decentralized, using SSH existing OS credentials to access to remote machines
+
+* **Scalability and flexibility**
+** Easily and quickly scale the systems you automate through a modular design that supports a large range of operating systems, cloud platforms, and network devices.
+
+* **Idempotence and predictability**
+** When the system is in the state your playbook describes Ansible does not change anything, even if the playbook runs multiple times.
+
+To learn more about 
+
+
+
+=== Install and setup Ansible for Red Hat Enterprise Linux 9
 
 If you use Ansible content within Red Hat Enterprise Linux (RHEL), 
 you should know that important changes where made with RHEL 8.6 and 9.0.
@@ -8,6 +47,8 @@ RHEL 7 and RHEL 8.0-8.5 customers have access to a separate Ansible Engine repos
 In RHEL 8.6 and 9.0, customers will have access to Ansible Core, which will be included in the corresponding AppStream repository. 
 
 The move to Ansible Core in RHEL is being made to adapt to changes in the Ansible project.
+
+
 
 
 
