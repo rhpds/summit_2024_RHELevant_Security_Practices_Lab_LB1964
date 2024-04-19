@@ -244,7 +244,7 @@ Now lets make sure we can see the newly created ssh keypair.
 
 We want to find out if the current machine has any ssh keys under the users ‘.ssh’ directory. 
 
-+
+
 [source,bash]
 ----
 ls ~/.ssh/
@@ -252,7 +252,7 @@ ls ~/.ssh/
 
 You should now see 2 new files called ‘id_rsa’ and ‘id_rsa.pub’
 
-+
+
 [source,textinfo]
 ----
 [lab-user@bastion ~]$ ls ~/.ssh/
