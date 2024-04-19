@@ -94,7 +94,7 @@ For more info, check out our page on https://access.redhat.com/articles/complian
 
 You have to analyse your risk and pick the one that best fits your org.
 
-That being said, a lot of organisations use and reference the NIST Cybersecurity Framework (CFS).
+That being said, a lot of organisations use and reference the https://www.nist.gov/cyberframework[NIST Cybersecurity Framework (CSF)].
 
 As of Feb 26th 2024 NIST's released CSF version 2.0.
 
