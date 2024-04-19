@@ -33,8 +33,9 @@ As automation technology, Ansible is designed around the following principles:
 * **Idempotence and predictability**
 ** When the system is in the state your playbook describes Ansible does not change anything, even if the playbook runs multiple times.
 
-To learn more about 
+To learn more about ansible check out the Official https://docs.ansible.com/ansible/latest/getting_started/basic_concepts.html[Ansible Commnity Documentation]
 
+We are going to make sure you can get Ansible Installed on RHEL 9.
 
 
 === Install and setup Ansible for Red Hat Enterprise Linux 9
@@ -48,8 +49,15 @@ In RHEL 8.6 and 9.0, customers will have access to Ansible Core, which will be i
 
 The move to Ansible Core in RHEL is being made to adapt to changes in the Ansible project.
 
+** What is the difference between Ansible core and engine? **
+Long story short,
 
+You'll be using Ansible core with RHEL 9, so lets get it installed.
 
+[source,ini,role=execute,subs=attributes+]
+----
+sudo dnf install ansible-core
+----
 
 
 == Reference Documentation
