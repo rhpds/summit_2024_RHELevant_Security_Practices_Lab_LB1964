@@ -1,10 +1,11 @@
 == Welcome to the Red Hat Summit 2024 Showroom Template for RHELevant Security Practices Lab LB1964
 
-Abstract:
-The challenge of securing your systems is a continuous battle.
-In this session we will simulate working in an airgapped network.
+=== Abstract:
 
-You will learn how to:
+* The challenge of securing your systems is a continuous battle.
+* In this session we will simulate working in an airgapped network.
+
+=== You will learn how to:
 
 * track your current machine state
 * choose best practices for your enviernment
@@ -12,7 +13,18 @@ You will learn how to:
 * use **Ansible core** to harden **Red Hat Enterprise Linux 9**
 
 
-== Getting Started
+=== Getting Started
 
 * Join us live at summit using our Red Hat Demo Platform or
 * Follow the Documentation to do this on your own linux machine inside of a VM.
+
+
+=== Speaker Information:
+
+* Joshua Loscar 
+** Senior Technical Account Manager, Red Hat
+** jloscar@redhat.com
+
+* Nate Lager
+** Senior Technical Marketing Manager, Red Hat
+** nlager@redhat.com 
