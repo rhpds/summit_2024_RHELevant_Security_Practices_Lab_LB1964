@@ -16,13 +16,13 @@ RHEL is a great platform right out of the box, but we can't make all the securit
 
 In today's lab, we are going to take you down several roads. 
 
-* SSH Setup
-* Managing Risk & Threat Models
-* Trust
-* Audit
-* Network Facing
-* Hardening
-* Exploitation & Mitigation of Misconfigured Systems 
+* Lab Setup
+** KVM for Local Testing
+** Ansible 101
+* Theory, Threats, and Tools
+* Creating a system baseline
+* Common Misconfigurations
+* Exploitation & Mitigation
 
 == Lab Access
 
