@@ -9,6 +9,10 @@ Become familiar with the basics of ssh
 
 == 1.1: Introduction
 
+If you want to do this at home or on your own machine follow these instructions.
+
+If you are in a live classroom or in a phisical workshop, you will skip this section.
+
 In this scenario you are a system administrator given a task to harden a Red Hat Enterprise Linux system. 
 You have no idea what is on the system, what it is running, the hardware, or software installed. 
 You are working on a black box.
