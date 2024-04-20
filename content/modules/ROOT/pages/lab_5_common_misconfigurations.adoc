@@ -1,3 +1,10 @@
 == Common Misconfigurations
 
 === 5
+We are going to highlight an handful of issues that have been in the news, 
+
+
+https://www.redhat.com/en/blog/channel/security
+
+Patch management needs a revolution, part 1: Surveying cybersecurity’s lineage
+https://www.redhat.com/en/blog/patch-management-needs-a-revolution-part-1
