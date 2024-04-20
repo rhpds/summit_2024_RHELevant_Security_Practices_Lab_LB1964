@@ -1,4 +1,4 @@
-== Welcome to the Red Hat Summit 2024 Showroom Template for RHELevant Security Practices Lab LB1964
+== Welcome to the Red Hat Summit 2024 RHELevant Security Practices Lab LB1964
 
 === Abstract:
 
