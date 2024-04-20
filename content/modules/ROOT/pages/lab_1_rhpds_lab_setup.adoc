@@ -9,6 +9,11 @@ Become familiar with the basics of ssh
 
 == 1.1: Introduction
 
+If you are in a live classroom or in a phisical workshop, follow these instructions. 
+
+If you want to do this at home or on your own machine, you can follow the 'lab_1_rhpds_lab_setup.adoc' which is after this page.
+
+
 In this scenario you are a system administrator given a task to harden a Red Hat Enterprise Linux system. You have no idea what is on the system, what it is running, the hardware, or software installed. You are working on a black box.
 
 You are given credentials that should give you access to the machine. You are given a Jump Box also known as a bastion host or as a control node, and a username to log in with. 
