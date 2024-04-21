@@ -38,18 +38,23 @@ You should see a prompt with your current username and the hostname of the machi
 ----
 [lab-user@bastion ~]$
 ----
-
+**Explanation of this command:**
 
 We want to find out if the current machine has any ssh keys under the users ‘.ssh’ directory. 
+
+‘ls’ lists the files in the working directory.
+
+'~' aka tilda key, is a shortcut to reffer to your users home directory.
+
+'~/.ssh/' means it's going to /home/username/.ssh/
 
 [source,ini,role=execute,subs=attributes+]
 ----
 ls ~/.ssh/
 ----
 
-‘ls’ is going to list the files under the directory /home/username/.ssh
 
-Next we see there are files in the directrory.
+Next we see there are files in the directory.
 
 You should now see 2 randomly named files called ‘xxxxxxx.pem’ and ‘xxxxxxx.pub’
 
@@ -63,26 +68,50 @@ authorized_keys  config  xxxxxxx.pem  xxxxxxx.pub
 
 == 1.3 Logging onto node1 
 
-Up to this point we have been using the lab-user account.
-On our server we have a different user we need to log in with and then create a dedicated account for our automation services.
+Up to this point we have been using the lab-user account on our bastion host.
+On other machine 'node1' we have a different user we need to log in with.,
 
-First lets go log into the server by opening another terminal and ssh’ing to the server.
+We want to test our credentials by logging into the node machine by typing the following into the terminal.
 
- 
+**Explanation of this command:**
+
+'ssh' Secure Shell, is a cryptographic network protocol that enables secure remote connections and data sharing between two computers over an unsecured network
+
+'ec2-user' the account username of the machine we want to log into 
+
+'@' the address we want to connect to
+
+'node1' is the name of the device we want to log into. This could also be an Ip address or a FQDN 
+
 [source,bash]
 ----
 ssh ec2-user@node1
 ----
 
-When you log in you should  now see
-
-You should see a prompt with your current username and the hostname of the machine you are logged into.
+If you where successful in your connection, you should see a prompt with your current username and the hostname of the machine you are logged into.
 
 
 [source,textinfo]
 ----
 [ec2-user@node1 ~]$
 ----
+
+For one of our upcoming steps, we need to find out what our ip address for node 1 is.
+Your IP WILL BE DIFFERENT from what you see in the documentaion, and it will be be different from the other people in the workshop.
+
+In your terminal type
+
+[source,bash]
+----
+ip addr
+----
+
+**Explanation of this command:**
+
+'ip addr' lists each of your networking devices and the infomation about them.
+
+You want to find the 
+
 
 You can now exit the node machine by typing,
 
