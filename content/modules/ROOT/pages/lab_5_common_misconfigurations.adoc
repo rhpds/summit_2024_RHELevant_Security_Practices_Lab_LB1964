@@ -19,3 +19,15 @@ https://www.redhat.com/en/blog/channel/security
 
 Patch management needs a revolution, part 1: Surveying cybersecurity’s lineage
 https://www.redhat.com/en/blog/patch-management-needs-a-revolution-part-1
+
+
+
+Ok enough of theory;
+
+The most common issues boiled down are in the fallowing cattagories:
+
+* permission issue
+** 
+
+* service misconfiguration 
+** 
