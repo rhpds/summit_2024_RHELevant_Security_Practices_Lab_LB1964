@@ -85,14 +85,26 @@ In this lab we will connect to
 * bastion
 * node1
 
-To Create the most simple inventory file use your favorite editer,
+We will next create a simple inventory file for ansible to use to connect to the machines.
+
+We will be using the vi file editor.
+
+If you have never worked with vi before, here is a very basic https://www.redhat.com/sysadmin/get-started-vi-editor[How to get started with the Vi editor]
 
 [source,ini,role=execute,subs=attributes+]
 ----
 vi ~/ansible/inventory
 ----
 
-Once you have the file opened past the following
+This will open a new file named inventory.
+
+To edit a file in vi, you will need to change to edit mode.
+
+You will need to type 'i' in your terminal to go into 'insert' mode.
+
+You should now be able to to type, edit and paste into the ternimal to chagne the file.
+
+You will want to copy the following and paste it into the terminal.
 
 [source,ini,role=execute,subs=attributes+]
 ----
@@ -101,10 +113,18 @@ localhost
 
 
 [nodes]
-YourNode1IPaddress 192.168.122.185
+YourNode1IPaddress
 
 ----
-Save and close the file
+Under the nodes section is where you will put your node1 ip addesss you made note of earlier in the workshop.
+
+Next you will need to switch to vi command mode,
+you do this by pressing the 'Esc' button on your keyboard.
+
+Now you will want to save and close the vi file,
+to do this type ':wq'
+
+This will write the file, and quit the vi program.
 
 
 === Basic Ansible smoke ping test
