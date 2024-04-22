@@ -1,4 +1,4 @@
-# RHPDS Lab Setup
+== RHPDS Lab Setup
 
 
 Lab Length
