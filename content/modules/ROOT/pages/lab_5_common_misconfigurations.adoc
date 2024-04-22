@@ -7,10 +7,10 @@ Because we have been writing the report for so many years, we have been able to 
 
 Here are the last few years of Red Hat Product Security Risk Reports
 
-https://www.redhat.com/en/resources/product-security-risk-report-2022[Red Hat Product Security risk report 2022]
-https://www.redhat.com/en/resources/product-security-risk-report-detail[2021 Red Hat Product Security risk report]
-https://www.redhat.com/en/resources/product-security-risk-report-2020[Red Hat Product Security risk report: 2020]
-https://access.redhat.com/blogs/766093/posts/2695561[Happy 15th Birthday Red Hat Product Security]
+* https://www.redhat.com/en/resources/product-security-risk-report-2022[Red Hat Product Security risk report 2022]
+* https://www.redhat.com/en/resources/product-security-risk-report-detail[2021 Red Hat Product Security risk report]
+* https://www.redhat.com/en/resources/product-security-risk-report-2020[Red Hat Product Security risk report: 2020]
+* https://access.redhat.com/blogs/766093/posts/2695561[Happy 15th Birthday Red Hat Product Security]
 
 
 
