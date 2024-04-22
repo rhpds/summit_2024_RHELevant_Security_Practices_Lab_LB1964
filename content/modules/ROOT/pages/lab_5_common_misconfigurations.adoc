@@ -1,8 +1,6 @@
 == Common Misconfigurations
 
 === 5
-We are going to highlight an handful of issues that have been in the news.
-
 Because we have been writing the report for so many years, we have been able to note many trends and patterns. 
 
 Here are the last few years of Red Hat Product Security Risk Reports
@@ -11,6 +9,8 @@ Here are the last few years of Red Hat Product Security Risk Reports
 * https://www.redhat.com/en/resources/product-security-risk-report-detail[2021 Red Hat Product Security risk report]
 * https://www.redhat.com/en/resources/product-security-risk-report-2020[Red Hat Product Security risk report: 2020]
 * https://access.redhat.com/blogs/766093/posts/2695561[Happy 15th Birthday Red Hat Product Security]
+
+We are going to highlight an handful of issues that have been in the news.
 
 
 
@@ -26,8 +26,29 @@ Ok enough of theory;
 
 The most common issues boiled down are in the following categories:
 
-* permission issue
+=== 5.1 Permission Issue
+
+** Adding Ansible playbook to set this up.
+
+
+For the next steps, as Linux Sys-Admin's we understand there are a handful of places we can look for users on the systems and thier permissions.
+
+In this lab we are assuming we are on a machine with local acccounts (Not hooked to an LDAP or AD system).
+
+We need to check the common files connected to an account.
+
+* /etc/users
+* /etc/group
+* /etc/sudoers
+* /etc/shadow
+* /etc/passwd
+* /home/*
+
+
+
+=== 5.2 Service Misconfiguration 
+
 ** Adding Ansible playbook to set this up
 
-* service misconfiguration 
-** Adding Ansible playbook to set this up
+
+Depending on what framework you need to apply to your environnement.
