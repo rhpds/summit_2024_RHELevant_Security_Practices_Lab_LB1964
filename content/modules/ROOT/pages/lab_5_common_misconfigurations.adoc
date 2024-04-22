@@ -24,10 +24,10 @@ https://www.redhat.com/en/blog/patch-management-needs-a-revolution-part-1
 
 Ok enough of theory;
 
-The most common issues boiled down are in the fallowing cattagories:
+The most common issues boiled down are in the following categories:
 
 * permission issue
-** 
+** Adding Ansible playbook to set this up
 
 * service misconfiguration 
-** 
+** Adding Ansible playbook to set this up
