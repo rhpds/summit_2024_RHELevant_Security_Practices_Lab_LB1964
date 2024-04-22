@@ -110,8 +110,24 @@ ip addr
 
 'ip addr' lists each of your networking devices and the infomation about them.
 
-You want to find the 
+You want to find the ip address for the ethernet interface.
 
+You should have a few different devices.
+
+[source,textinfo]
+----
+<---------Output_Abbreviated------------------->
+1: lo: <LOOPBACK,UP,LOWER_UP
+   link/loopback 
+   inet 127.0.0.1
+2: enp9s0u2u1u2 <NO-CARRIER,BROADCAST,MULTICAST,UP>
+   link/ether
+   inet 172.16.14.6
+<---------Output_Abbreviated------------------->
+----
+
+It will be the interface with the "link/ether",
+and make note of that IP Address for a future step.
 
 You can now exit the node machine by typing,
 
