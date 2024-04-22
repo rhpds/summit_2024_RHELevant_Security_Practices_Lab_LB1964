@@ -158,6 +158,12 @@ Here's an example of an Ansible playbook that gathers facts from a RHEL 9 machin
 
 In this example we will use Vi text editor.
 
+Building on the past directories we have set up our ansible working directorym we are going to create a new file using vi.
+
+'vi ~/ansible/PPS_Gather_And_Report.yml'
+
+Then we are going into insert mode in the file by pressing 'i'
+then you will paste the playbook below.
 
 
 [source,ini,role=execute,subs=attributes+]
@@ -200,9 +206,16 @@ In this example we will use Vi text editor.
 
 ----
 
-Save and exit that file.
+Next we will switch to command mode in vi by pressing the 'Esc' button on your keyboard,
+then type ':wq' to write the file, and exit vi.
 
-Then open your favorite text editor, and create a jinja2 template  named 'report_template.j2'
+
+Next we are going to create a jinja2 template  named 'report_template.j2' also using vi.
+
+'vi ~/ansible/report_template.j2'
+
+Then we are going into insert mode in the file by pressing 'i'
+then you will paste the jinja2 template below.
 
 [source,ini,role=execute,subs=attributes+]
 ----
@@ -220,7 +233,10 @@ Open Ports, Protocols, and Running Services:
 {% endfor %}
 ----
 
-Now It's time for you to run your ansible playbook.
+Next we will switch to command mode in vi by pressing the 'Esc' button on your keyboard,
+then type ':wq' to write the file, and exit vi.
+
+Now It's time for you to run your ansible playbook, in your terminal type:
 
 [source,ini,role=execute,subs=attributes+]
 ----
