@@ -144,9 +144,9 @@ exit
 
 Which should take you back to your bastion host.
 
-== 1.4 Install Cockpit Project
+== 1.4 Install Web Console
 
-We are going to install Cockpit on our bastion machine, which gives us a website to admin our linux system.
+We are going to install Cockpit AKA Web Console, on our bastion machine, which gives us a website to admin our linux system.
 
 Open a terminal on your host machine, and type
 
@@ -162,6 +162,13 @@ We are leaving it off for now to opimize your machine resources.
 ----
 sudo systemctl enable --now cockpit.socket
 ----
+
+The terminal window to your right is *already* logged into the lab environment as the `{ssh_user}` user via `ssh`. 
+All steps of this lab are to be completed as the `{ssh_user}` user on the bastion server.
+
+To access the Web Console GUI you will need to open a browser, go to settings, type "proxy" in the search bar in the top right corner and click settings. Select "Manual proxy configuration" and go to "SOCKS Host" and put in localhost and for the "Port" put in 5060. Finally check the checkbox for "Proxy DNS when using SOCKS v5".
+
+Finally you will need to open a terminal window on your host machine and run `{socks_ssh_command}` using the password `{admin_pass}`.
 
 Now we are ready to step into the next section.
 
