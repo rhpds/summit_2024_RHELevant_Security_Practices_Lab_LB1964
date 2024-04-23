@@ -26,10 +26,22 @@ Ok enough of theory;
 
 The most common issues boiled down are in the following categories:
 
-=== 5.1 Permission Issue
+=== 5.1 Weak Passwords
 
-** Adding Ansible playbook to set this up.
+In the past you would check the password with 'pam_cracklib', but this should not be used in RHEL 9.
 
+There is a new package you will want to use called 'pam_pwquality'.
+
+
+
+**Resources**
+
+* https://access.redhat.com/solutions/6999802[PAM unable to dlopen(/usr/lib64/security/pam_cracklib.so)]
+* https://access.redhat.com/solutions/5027331[Set Password Policy & Complexity for RHEL 8 & 9 via pam_pwhistory, pam_pwquality & pam_faillock]
+* https://access.redhat.com/solutions/6979714[Set Password Complexity/Policy with pam_pwquality in Red Hat Enterprise Linux 8, 9]
+
+
+=== 5.2 Permission Issue
 
 For the next steps, as Linux Sys-Admin's we understand there are a handful of places we can look for users on the systems and thier permissions.
 
@@ -43,12 +55,21 @@ We need to check the common files connected to an account.
 * /etc/shadow
 * /etc/passwd
 * /home/*
+* /etc/cron*
+
+Unused accounts with certain privileges are not being deleted.
 
 
-
-=== 5.2 Service Misconfiguration 
+=== 5.3 Service Misconfiguration 
 
 ** Adding Ansible playbook to set this up
 
+What are the services that are commonly messed up?
+
+Apache
 
 Depending on what framework you need to apply to your environnement.
+
+=== 5.4 Neglecting Updates
+
+=== 5.5 
