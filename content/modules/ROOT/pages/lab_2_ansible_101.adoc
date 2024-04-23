@@ -153,7 +153,7 @@ ansible -m ping -i inventory node1
 
 If everything is working correctly you should see something like this in your terminal
 
-[source,ini,role=execute,subs=attributes+]
+[source,textinfo]
 ----
 machinehostname | SUCCESS => {
     "ansible_facts": {
