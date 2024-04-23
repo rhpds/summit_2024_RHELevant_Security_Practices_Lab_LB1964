@@ -34,7 +34,7 @@ More specifically, the three sos components do the following:
 
 * ```sos report``` collects debugging information from one system.
 
-* '''sos collect''' allows to run and collect individual sos reports from a specified set of nodes.
+* `sos collect` allows to run and collect individual sos reports from a specified set of nodes.
 
 * '''sos clean''' obfuscates potentially sensitive information such as user names, host names, IP or MAC addresses, or other user-specified data.
 
