@@ -5,7 +5,7 @@ Lab Length
 Medium/Average (~10-20 mins)
 
 Goal
-Become familiar with the basics of ssh
+Become familiar with the Summit lab environment
 
 == 1.1: Introduction
 
@@ -34,7 +34,7 @@ From your bastion host, open a terminal
 
 You should see a prompt with your current username and the hostname of the machine you are logged into.
 
-[source,ini,role=execute,subs=attributes+]
+[source,textinfo]
 ----
 [lab-user@bastion ~]$
 ----
@@ -78,6 +78,11 @@ On other machine 'node1' we have a different user we need to log in with.,
 
 We want to test our credentials by logging into the node machine by typing the following into the terminal.
 
+[source,ini,role=execute,subs=attributes+]
+----
+ssh ec2-user@node1
+----
+
 **Explanation of this command:**
 
 'ssh' Secure Shell, is a cryptographic network protocol that enables secure remote connections and data sharing between two computers over an unsecured network
@@ -88,10 +93,6 @@ We want to test our credentials by logging into the node machine by typing the f
 
 'node1' is the name of the device we want to log into. This could also be an Ip address or a FQDN 
 
-[source,bash]
-----
-ssh ec2-user@node1
-----
 
 If you where successful in your connection, you should see a prompt with your current username and the hostname of the machine you are logged into.
 
@@ -106,7 +107,7 @@ Your IP WILL BE DIFFERENT from what you see in the documentaion, and it will be 
 
 In your terminal type
 
-[source,bash]
+[source,ini,role=execute,subs=attributes+]
 ----
 ip addr
 ----
@@ -127,7 +128,7 @@ You should have a few different devices.
    inet 127.0.0.1
 2: enp9s0u2u1u2 <NO-CARRIER,BROADCAST,MULTICAST,UP>
    link/ether
-   inet 172.16.14.6
+   inet 192.168.0.112
 <---------Output_Abbreviated------------------->
 ----
 
@@ -136,7 +137,7 @@ and make note of that IP Address for a future step.
 
 You can now exit the node machine by typing,
 
-[source,textinfo]
+[source,ini,role=execute,subs=attributes+]
 ----
 exit
 ----
