@@ -40,9 +40,12 @@ You should see a prompt with your current username and the hostname of the machi
 ----
 **Explanation of what you see in the terminal**
 
+```
 * 'lab-user' is the current logged in user 
 * '@' is the at symbol which shows that you are connecting to a remote machine
 * 'bastion' is the current machine hostname
+```
+
 
 We want to find out if the current machine has any ssh keys under the users ‘.ssh’ directory. 
 
