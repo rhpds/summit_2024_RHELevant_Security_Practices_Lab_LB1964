@@ -32,7 +32,7 @@ This is a great way to help troubleshoot and see the system changes on your syst
 The sos utility allows to collect various debugging information from one or more systems, optionally clean sensitive data, and upload it in a form of a report to Red Hat.
 More specifically, the three sos components do the following:
 
-* '''sos report''' collects debugging information from one system.
+* ```sos report``` collects debugging information from one system.
 
 * '''sos collect''' allows to run and collect individual sos reports from a specified set of nodes.
 
