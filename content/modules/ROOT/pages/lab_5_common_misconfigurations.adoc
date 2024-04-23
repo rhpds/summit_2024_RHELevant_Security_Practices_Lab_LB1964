@@ -1,7 +1,16 @@
 == Common Misconfigurations
 
-=== 5
-Because we have been writing the report for so many years, we have been able to note many trends and patterns. 
+
+
+=== Red Hat Security Reports
+
+Because we have been writing the report for so many years, we have been able to note many trends and patterns.
+
+In the past years, we have been issues with:
+
+* Privilege escalation
+* Supply Chain 
+
 
 Here are the last few years of Red Hat Product Security Risk Reports
 
