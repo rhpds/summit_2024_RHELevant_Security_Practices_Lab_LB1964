@@ -38,21 +38,26 @@ You should see a prompt with your current username and the hostname of the machi
 ----
 [lab-user@bastion ~]$
 ----
-**Explanation of this command:**
+**Explanation of what you see in the terminal**
+
+* 'lab-user' is the current logged in user 
+* '@' is the at symbol which shows that you are connecting to a remote machine
+* 'bastion' is the current machine hostname
 
 We want to find out if the current machine has any ssh keys under the users ‘.ssh’ directory. 
+
+
+[source,ini,role=execute,subs=attributes+]
+----
+ls ~/.ssh/
+----
+**Explanation of this command:**
 
 ‘ls’ lists the files in the working directory.
 
 '~' aka tilda key, is a shortcut to reffer to your users home directory.
 
 '~/.ssh/' means it's going to /home/username/.ssh/
-
-[source,ini,role=execute,subs=attributes+]
-----
-ls ~/.ssh/
-----
-
 
 Next we see there are files in the directory.
 
