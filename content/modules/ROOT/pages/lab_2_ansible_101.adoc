@@ -87,6 +87,8 @@ In this lab we will connect to
 
 We will next create a simple inventory file for ansible to use to connect to the machines.
 
+Check out our documentation on https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html[Ansible intro inventory].
+
 We will be using the vi file editor.
 
 If you have never worked with vi before, here is a very basic https://www.redhat.com/sysadmin/get-started-vi-editor[How to get started with the Vi editor]
@@ -113,7 +115,7 @@ localhost
 
 
 [nodes]
-YourNode1IPaddress
+node1 ansible_host=YOURNODE1IPADDRESS
 
 ----
 Under the nodes section is where you will put your node1 ip addesss you made note of earlier in the workshop.
