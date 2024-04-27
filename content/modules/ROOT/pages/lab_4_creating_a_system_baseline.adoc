@@ -147,10 +147,10 @@ It should give you a path to both files created,
 as an example
 
 A mapping of obfuscated elements is available at
-        /var/tmp/sosreport-bastion-2024-04-19-unczult-private_map
+        /var/tmp/sosreport-*-unczult-private_map
 
 The obfuscated archive is available at
-        /var/tmp/sosreport-bastion-2024-04-19-unczult-obfuscated.tar.xz
+        /var/tmp/sosreport-*-obfuscated.tar.xz
 
 === 4.5 Capturing Ports, Protocalls, and Services with Anisble
 
