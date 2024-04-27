@@ -133,7 +133,7 @@ The original sos report or sos collect stays unchanged, and a new *-obfuscated.t
 
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo sos clean --archive-type tarball /var/tmp/sosreport-bastion-2024-04-19-unczult.tar.xz
+sudo sos clean --archive-type tarball /var/tmp/sosreport*.tar.xz
 ----
 
 The automatic user name cleaning will automatically run for users reported through the lastlog file for users with an UID of 1000 and above. This option is used for LDAP users that may not appear as an actual login, but may occur in certain log files.
