@@ -32,11 +32,11 @@ This is a great way to help troubleshoot and see the system changes on your syst
 The sos utility allows to collect various debugging information from one or more systems, optionally clean sensitive data, and upload it in a form of a report to Red Hat.
 More specifically, the three sos components do the following:
 
-* ```sos report``` collects debugging information from one system.
+* `sos report` collects debugging information from one system.
 
 * `sos collect` allows to run and collect individual sos reports from a specified set of nodes.
 
-* '''sos clean''' obfuscates potentially sensitive information such as user names, host names, IP or MAC addresses, or other user-specified data.
+* `sos clean` obfuscates potentially sensitive information such as user names, host names, IP or MAC addresses, or other user-specified data.
 
 The information collected in a report contains configuration details, system information, and diagnostic information from a RHEL system, such as:
 
@@ -76,7 +76,7 @@ sudo rpm -q sos
 
 === 4.2 Generating an sos report from the command line
 
-Use the 'sos report' command to gather an sos report from a RHEL server.
+Use the `sos report` command to gather an sos report from a RHEL server.
 
 **Prerequisites**
 
@@ -87,7 +87,7 @@ Use the 'sos report' command to gather an sos report from a RHEL server.
 
 Run the sos report command and follow the on-screen instructions.
 
-You can add the --upload option to transfer the sos report to Red Hat immediately after generating it.
+You can add the `--upload option` to transfer the sos report to Red Hat immediately after generating it.
 
 [source,ini,role=execute,subs=attributes+]
 ----
@@ -96,7 +96,7 @@ sudo sos report
 
 === 4.2.1 (Optional) If you have already opened a Technical Support case with Red Hat,
 enter the case number to embed it in the sos report file name,
-and it will be uploaded to that case if you specified the --upload option.
+and it will be uploaded to that case if you specified the `--upload` option.
 
 If you do not have a case number, leave this field blank.
 Entering a case number is optional and does not affect the operation of the sos utility.
@@ -117,7 +117,7 @@ The sos utility offers a routine to obfuscate potentially sensitive data, such a
 * MAC addresses
 * other user-specified keywords. 
 
-The original sos report or sos collect stays unchanged, and a new *-obfuscated.tar.xz file is generated and intended to be shared with a third party.
+The original sos report or sos collect stays unchanged, and a new `*-obfuscated.tar.xz` file is generated and intended to be shared with a third party.
 
 **Prerequisites** 
 
@@ -128,8 +128,8 @@ The original sos report or sos collect stays unchanged, and a new *-obfuscated.t
 **Procedure**
 
 * Run the sos clean command on either an sos report or sos collect tarball and follow the on-screen instructions.
-** You can add the --keywords option to additionally clean a given list of keywords.
-** You can add the --usernames option to obfuscate further sensitive user names.
+** You can add the `--keywords` option to additionally clean a given list of keywords.
+** You can add the `--usernames` option to obfuscate further sensitive user names.
 
 [source,ini,role=execute,subs=attributes+]
 ----
@@ -141,16 +141,16 @@ The automatic user name cleaning will automatically run for users reported throu
 **Verification steps**
 
 * Verify that the sos clean command created an obfuscated archive and an obfuscation mapping in the /var/tmp/ directory matching the description from the command output.
-* Check the *-private_map file for the obfuscation mapping
+* Check the `*-private_map` file for the obfuscation mapping
 
 It should give you a path to both files created, 
 as an example
 
 A mapping of obfuscated elements is available at
-        /var/tmp/sosreport-*-unczult-private_map
+        `/var/tmp/sosreport-*-unczult-private_map`
 
 The obfuscated archive is available at
-        /var/tmp/sosreport-*-obfuscated.tar.xz
+        `/var/tmp/sosreport-*-obfuscated.tar.xz`
 
 === 4.5 Capturing Ports, Protocalls, and Services with Anisble
 
@@ -160,9 +160,9 @@ In this example we will use Vi text editor.
 
 Building on the past directories we have set up our ansible working directorym we are going to create a new file using vi.
 
-'vi ~/ansible/PPS_Gather_And_Report.yml'
+`vi ~/ansible/PPS_Gather_And_Report.yml`
 
-Then we are going into insert mode in the file by pressing 'i'
+Then we are going into insert mode in the file by pressing `i`
 then you will paste the playbook below.
 
 
@@ -207,14 +207,14 @@ then you will paste the playbook below.
 ----
 
 Next we will switch to command mode in vi by pressing the 'Esc' button on your keyboard,
-then type ':wq' to write the file, and exit vi.
+then type `:wq` to write the file, and exit vi.
 
 
-Next we are going to create a jinja2 template  named 'report_template.j2' also using vi.
+Next we are going to create a jinja2 template  named `report_template.j2` also using vi.
 
-'vi ~/ansible/report_template.j2'
+`vi ~/ansible/report_template.j2`
 
-Then we are going into insert mode in the file by pressing 'i'
+Then we are going into insert mode in the file by pressing `i`
 then you will paste the jinja2 template below.
 
 [source,ini,role=execute,subs=attributes+]
@@ -233,8 +233,8 @@ Open Ports, Protocols, and Running Services:
 {% endfor %}
 ----
 
-Next we will switch to command mode in vi by pressing the 'Esc' button on your keyboard,
-then type ':wq' to write the file, and exit vi.
+Next we will switch to command mode in vi by pressing the `Esc` button on your keyboard,
+then type `:wq` to write the file, and exit vi.
 
 Now It's time for you to run your ansible playbook, in your terminal type:
 
