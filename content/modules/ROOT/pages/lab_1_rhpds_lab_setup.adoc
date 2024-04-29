@@ -41,9 +41,9 @@ You should see a prompt with your current username and the hostname of the machi
 **Explanation of what you see in the terminal**
 
 ```
-* 'lab-user' is the current logged in user 
-* '@' is the at symbol which shows that you are connecting to a remote machine
-* 'bastion' is the current machine hostname
+* `lab-user` is the current logged in user 
+* `@` is the at symbol which shows that you are connecting to a remote machine
+* `bastion` is the current machine hostname
 ```
 
 
@@ -56,15 +56,15 @@ ls ~/.ssh/
 ----
 **Explanation of this command:**
 
-‘ls’ lists the files in the working directory.
+`ls` lists the files in the working directory.
 
-'~' aka tilda key, is a shortcut to reffer to your users home directory.
+`~` aka tilda key, is a shortcut to reffer to your users home directory.
 
-'~/.ssh/' means it's going to /home/username/.ssh/
+`~/.ssh/` means it's going to /home/username/.ssh/
 
 Next we see there are files in the directory.
 
-You should now see 2 randomly named files called ‘xxxxxxx.pem’ and ‘xxxxxxx.pub’
+You should now see 2 randomly named files called `xxxxxxx.pem` and `xxxxxxx.pub`
 
 
 [source,textinfo]
@@ -88,13 +88,13 @@ ssh ec2-user@node1
 
 **Explanation of this command:**
 
-'ssh' Secure Shell, is a cryptographic network protocol that enables secure remote connections and data sharing between two computers over an unsecured network
+`ssh` Secure Shell, is a cryptographic network protocol that enables secure remote connections and data sharing between two computers over an unsecured network
 
-'ec2-user' the account username of the machine we want to log into 
+`ec2-user` the account username of the machine we want to log into 
 
-'@' the address we want to connect to
+`@` the address we want to connect to
 
-'node1' is the name of the device we want to log into. This could also be an Ip address or a FQDN 
+`node1` is the name of the device we want to log into. This could also be an Ip address or a FQDN 
 
 
 If you where successful in your connection, you should see a prompt with your current username and the hostname of the machine you are logged into.
@@ -117,7 +117,7 @@ ip addr
 
 **Explanation of this command:**
 
-'ip addr' lists each of your networking devices and the infomation about them.
+`ip addr` lists each of your networking devices and the infomation about them.
 
 You want to find the ip address for the ethernet interface.
 
@@ -135,7 +135,7 @@ You should have a few different devices.
 <---------Output_Abbreviated------------------->
 ----
 
-It will be the interface with the "link/ether",
+It will be the interface with the `link/ether`,
 and make note of that IP Address for a future step.
 
 You can now exit the node machine by typing,
