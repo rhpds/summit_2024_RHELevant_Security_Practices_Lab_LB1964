@@ -54,11 +54,11 @@ To use the sos utility, install the sos package.
 
 **Prerequisites**
 
-You need 'root' privileges.
+You need `root` privileges.
 
 **Procedure**
 
-Install the 'sos' package.
+Install the `sos` package.
 
 [source,ini,role=execute,subs=attributes+]
 ----
