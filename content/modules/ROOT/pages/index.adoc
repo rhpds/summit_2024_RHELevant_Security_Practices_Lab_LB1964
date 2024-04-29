@@ -18,7 +18,7 @@ In today's lab, we are going to take you down several roads.
 
 * Lab Setup
 ** KVM for Local Testing
-** Ansible 101
+* Ansible 101
 * Theory, Threats, and Tools
 * Creating a system baseline
 * Common Misconfigurations
