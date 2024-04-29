@@ -76,7 +76,7 @@ I also then like bring in a deafult ansible config file for later use.
 ansible-config init --disabled > ~/ansible/ansible.cfg
 ----
 
-We also need to create an inventory file to refference.
+We also need to create an inventory file to reference.
 
 The inventory file is where we list our machines we will connect to.
 
@@ -102,7 +102,7 @@ This will open a new file named inventory.
 
 To edit a file in vi, you will need to change to edit mode.
 
-You will need to type 'i' in your terminal to go into 'insert' mode.
+You will need to type `i` in your terminal to go into 'insert' mode.
 
 You should now be able to to type, edit and paste into the ternimal to chagne the file.
 
@@ -121,10 +121,10 @@ node1 ansible_host=YOURNODE1IPADDRESS
 Under the nodes section is where you will put your node1 ip addesss you made note of earlier in the workshop.
 
 Next you will need to switch to vi command mode,
-you do this by pressing the 'Esc' button on your keyboard.
+you do this by pressing the `Esc` button on your keyboard.
 
 Now you will want to save and close the vi file,
-to do this type ':wq'
+to do this type `:wq`
 
 This will write the file, and quit the vi program.
 
@@ -133,7 +133,7 @@ This will write the file, and quit the vi program.
 
 Lets make sure we can connect to both our machines
 
-first lets change dirrectories to our working folder
+first lets change directories to our working folder
 
 [source,ini,role=execute,subs=attributes+]
 ----
