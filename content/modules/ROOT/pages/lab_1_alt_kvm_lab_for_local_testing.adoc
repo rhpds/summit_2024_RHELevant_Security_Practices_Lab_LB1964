@@ -222,7 +222,7 @@ We want to find out if the current machine has any ssh keys under the users ‘.
 ls ~/.ssh/
 ----
 
-‘ls’ is going to list the files under the directory /home/username/.ssh
+`ls` is going to list the files under the directory /home/username/.ssh
 
 Next we want to create our own ssh-keypair, to do this using the following command.
 
@@ -235,7 +235,7 @@ This creates an interactive shell asking you a few questions.
 The first question is where do you want the key pair saved?
 We want to go with the default location, so hit the enter button on your keyboard.
 
-Next question is ‘Enter Passphrase” for your ssh key pair,
+Next question is `Enter Passphrase` for your ssh key pair,
 If your environment requires a password on your ssh keypairs, I’ll have a supplemental ssh_advance  section at the end of the lab for you to go through.
 We are going to go default without a password.
 On your keyboard, hit enter twice.
@@ -284,7 +284,7 @@ It should promopt you to enter the root password to the node1 machine.
 
 Now lets make sure we can see the newly created ssh keypair.
 
-We want to find out if the current machine has any ssh keys under the users ‘.ssh’ directory. 
+We want to find out if the current machine has any ssh keys under the users `.ssh` directory. 
 
 
 [source,ini,role=execute,subs=attributes+]
@@ -292,7 +292,7 @@ We want to find out if the current machine has any ssh keys under the users ‘.
 ls ~/.ssh/
 ----
 
-You should now see 2 new files called ‘id_rsa’ and ‘id_rsa.pub’
+You should now see 2 new files called `id_rsa` and `id_rsa.pub`
 
 
 [source,textinfo]
