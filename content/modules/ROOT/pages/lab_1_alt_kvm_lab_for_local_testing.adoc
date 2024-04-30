@@ -353,3 +353,11 @@ exit
 Which should take you back to your bastion host.
 
 Now we are ready to step into the next section.
+
+=== 1.9.1 copy your ssh key to your local machine
+
+[source,ini,role=execute,subs=attributes+]
+----
+ssh ec2-user@localhost
+----
+
