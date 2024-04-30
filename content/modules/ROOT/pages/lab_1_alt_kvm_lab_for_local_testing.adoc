@@ -330,7 +330,7 @@ You will want to test that bastion ssh key works to connect to your node1 machin
 
 [source,ini,role=execute,subs=attributes+]
 ----
-ssh root@node1IPADDRESS
+ssh ec2-user@node1IPADDRESS
 ----
 
 When you log in you should  now see
@@ -340,7 +340,7 @@ You should see a prompt with your current username and the hostname of the machi
 
 [source,textinfo]
 ----
-[root@node1 ~]$
+[ec2-use@node1 ~]$
 ----
 
 You can now exit the node machine by typing,
