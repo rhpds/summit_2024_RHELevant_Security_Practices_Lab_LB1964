@@ -212,6 +212,12 @@ passwd ec2-user
 LetMeIn1
 ----
 
+Then reboot your virtual machine.
+
+[source,ini,role=execute,subs=attributes+]
+----
+reboot
+----
 
 === 1.6 Create a SSH key pair
 
