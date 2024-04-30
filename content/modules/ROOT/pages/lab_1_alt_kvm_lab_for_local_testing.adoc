@@ -92,6 +92,7 @@ sudo yum install libguestfs-tools libguestfs -y
 
 Then we will need to start those services
 [source,ini,role=execute,subs=attributes+]
+----
 sudo systemctl enable libvirtd --now
 
 sudo systemctl enable --now cockpit.socket
