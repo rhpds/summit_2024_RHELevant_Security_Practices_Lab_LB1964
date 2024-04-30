@@ -87,7 +87,7 @@ Open a terminal on your host machine, and type
 ----
 sudo yum install libvirt cockpit cockpit-machines -y
 
-sudo yum install libguestfs-tools libguestfs -y
+sudo yum install guestfs-tools libguestfs-tools libguestfs -y
 ----
 
 Then we will need to start those services
