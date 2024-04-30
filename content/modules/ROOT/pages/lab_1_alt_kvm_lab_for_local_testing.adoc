@@ -126,6 +126,14 @@ sudo cp /var/lib/libvirt/images/rhel-9.3-x86_64-kvm.qcow2 /var/lib/libvirt/image
 
 Then we will want to customize the kvm image with the following command.
 
+We will want to elivate to sudo
+[source,ini,role=execute,subs=attributes+]
+----
+sudo su
+----
+
+Type in your root password.
+
 Then set a root password into the image
 
 [source,ini,role=execute,subs=attributes+]
