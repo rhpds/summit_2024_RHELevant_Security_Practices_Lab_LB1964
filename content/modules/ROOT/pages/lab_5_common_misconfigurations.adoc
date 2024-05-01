@@ -6,11 +6,6 @@
 
 Because we have been writing the report for so many years, we have been able to note many trends and patterns.
 
-In the past years, we have been issues with:
-
-* Privilege escalation
-* Supply Chain 
-
 
 Here are the last few years of Red Hat Product Security Risk Reports
 
@@ -23,12 +18,15 @@ We are going to highlight an handful of issues that have been in the news.
 
 
 
-
 https://www.redhat.com/en/blog/channel/security
 
 Patch management needs a revolution, part 1: Surveying cybersecurity’s lineage
 https://www.redhat.com/en/blog/patch-management-needs-a-revolution-part-1
 
+In the past years, we have been issues with:
+
+* Privilege escalation
+* Supply Chain 
 
 
 Ok enough of theory;
