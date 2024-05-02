@@ -4,4 +4,4 @@
 * xref:lab_3_theory_threats_and_tools.adoc[Lab 3 Theory, Threats, and Tools]
 * xref:lab_4_creating_a_system_baseline.adoc[Lab 4 Creating a system baseline]
 * xref:lab_5_common_misconfigurations.adoc[Lab 5 Common Misconfigurations]
-* xref:lab_6_exploitation_and_mitigation.adoc[Lab 6 Exploitation & Mitigation]
+* xref:lab_6_green_field_implementation.adoc[Lab 6 Green Field Implementation]
