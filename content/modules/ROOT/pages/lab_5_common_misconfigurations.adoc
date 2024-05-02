@@ -1,8 +1,7 @@
 == Common Misconfigurations
 
 
-
-=== Treads seen in Red Hat Security Reports
+=== 5 Threads seen in Red Hat Security Reports
 
 Because we have been writing security reports for so many years, we have been able to note many trends and patterns.
 
@@ -14,22 +13,6 @@ Here are the last few years of Red Hat Product Security Risk Reports
 * https://www.redhat.com/en/resources/product-security-risk-report-2020[Red Hat Product Security risk report: 2020]
 * https://access.redhat.com/blogs/766093/posts/2695561[Happy 15th Birthday Red Hat Product Security]
 
-We are going to highlight an handful of issues that have been in the news.
-
-
-https://www.redhat.com/en/blog/channel/security
-
-Patch management needs a revolution, part 1: Surveying cybersecurity’s lineage
-https://www.redhat.com/en/blog/patch-management-needs-a-revolution-part-1
-
-In the past years, we have been issues with:
-
-* Privilege escalation
-* Supply Chain 
-
-
-Ok enough of theory;
-
 The most common issues boiled down are in the following categories:
 
 === 5.1 Weak Passwords
@@ -37,7 +20,6 @@ The most common issues boiled down are in the following categories:
 In the past you would check the password with 'pam_cracklib', but this should not be used in RHEL 9.
 
 There is a new package you will want to use called 'pam_pwquality'.
-
 
 
 **Resources**
@@ -98,3 +80,12 @@ We will expand this section with those blog posts in the future, so make sure to
 
 
 === 5.5 
+
+
+We are going to highlight an handful of issues that have been in the news.
+
+
+https://www.redhat.com/en/blog/channel/security
+
+Patch management needs a revolution, part 1: Surveying cybersecurity’s lineage
+https://www.redhat.com/en/blog/patch-management-needs-a-revolution-part-1
