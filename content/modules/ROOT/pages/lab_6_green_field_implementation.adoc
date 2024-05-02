@@ -1,7 +1,5 @@
 == Green Field Implementation
 
-=== 6
-
 === Vulnerability exploitation
 
 
@@ -35,6 +33,24 @@ For New Installs
 
 What if you are bleeding edge and want to find out what is the newest release
 https://github.com/ComplianceAsCode/content
+
+If you want to try more of our labs, I'd suggest:
+
+
+* https://www.redhat.com/en/interactive-labs/create-images-container-tools-buildah[Creating images with Container Tools - buildah]
+* https://www.redhat.com/en/interactive-labs/build-machine-images-web-console-image-builder[Using Web Console to build virtual machine images - Image Builder]
+* https://www.redhat.com/en/build-custom-images-red-hat-image-builder[Building custom images with the Image Builder Service]
+
+Security Based Labs:
+
+* https://www.redhat.com/en/interactive-labs/openscap-security-compliance-vulnerability-scanning[Using OpenSCAP for security compliance and vulnerability scanning]
+* https://www.redhat.com/en/interactive-labs/configure-terminal-session-recording[Configure terminal session recording]
+* https://www.redhat.com/en/interactive-labs/approve-applications-file-access-policy[File Access Policy]
+* https://www.redhat.com/en/interactive-labs/customize-system-wide-cryptographic-policy[Customize the system-wide cryptographic policy]
+* https://www.redhat.com/en/interactive-labs/configure-system-wide-cryptographic-policy[Configuring the system-wide cryptographic policy]
+
+
+
 
 
 
