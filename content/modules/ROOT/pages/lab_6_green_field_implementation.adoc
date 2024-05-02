@@ -8,7 +8,15 @@ you will want to start with your standard RHEL 9 image. This is sometimes called
 To help us automation the install process, we will create something called a kickstart file.
 This can also be called an anwser file, anaconda file or install template.
 
+So there are a lot of ways to get started.
+This will depend on your orginization needs.
+Some folks will only be able to use a DVD to install a single machien and others my be able install a whole rack of machines at a time.
+
+=== 6.1 Download RHEL ISO
+
 In the most basic setup you can start with the https://access.redhat.com/downloads/content/479/ver=/rhel---9/9.4/x86_64/product-software[RHEL 9 install media].
+
+=== 6.2 Create a bootable USB Drive
 
 Then you can create a bootable USB Drive
 
@@ -18,16 +26,24 @@ Then you can create a bootable USB Drive
 
 * https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/performing_a_standard_rhel_9_installation/assembly_preparing-for-your-installation_installing-rhel#creating-a-bootable-usb-mac_assembly_creating-a-bootable-installation-medium[Creating a bootable USB device on macOS]
 
+=== 6.3 Advanced RHEL installs 
 
+We have multiple guides on different methods of https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/performing_a_standard_rhel_9_installation/installation-methods-advanced_installing-rhel[install methods for RHEL 9]
 
-We have some guides on different guides on https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/performing_a_standard_rhel_9_installation/installation-methods-advanced_installing-rhel[install methods for RHEL 9]
-
+* https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/performing_a_standard_rhel_9_installation/assembly_preparing-for-your-installation_installing-rhel#creating-an-installation-source_prepare-installation-source[Creating an installation source on an NFS server]
+* https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/performing_a_standard_rhel_9_installation/assembly_preparing-for-your-installation_installing-rhel#creating-an-installation-source-on-http_prepare-installation-source[Creating an installation source using HTTP or HTTPS]
+* https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/performing_a_standard_rhel_9_installation/assembly_preparing-for-your-installation_installing-rhel#preparing-to-install-from-the-network-using-http_assembly_preparing-for-your-installation[Preparing to install from the network using HTTP/PXE/Network]
+  
+=== 6.4 Customize your kickstart file
 
 Assuming you go with the basic media and choose the hardning frameworks like DISA STIGs for RHEL 9 GUI. After you have installed RHEL for the first time there will be a template created under `/root/anacanda-ks.cfg`.
 
-You can save this file and 
+You can save this file and us it as a template.
 
+From here you have  a few different ways to create, change or modify a kickstart file for the install on your other machines.
 
+* https://access.redhat.com/labs/kickstartconfig/[Kickstart Generator via browser]
+* You can also check out Image Builder via Web Console
 
 
 
