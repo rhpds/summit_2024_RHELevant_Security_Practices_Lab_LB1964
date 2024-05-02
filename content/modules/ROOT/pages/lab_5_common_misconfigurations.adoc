@@ -18,9 +18,11 @@ The most common issues boiled down are in the following categories:
 === 5.1 Weak Passwords
 
 ** Challenge 5.1.1 **
+
 What accounts are on your node1 machine?
 
 ** Challenge 5.1.2 **
+
 Of those accounts are they using strong password?
 
 **Resources**
@@ -38,9 +40,11 @@ There is a new package you will want to use called 'pam_pwquality'.
 === 5.2 Permission Issue
 
 ** Challenge 5.2.1 **
+
 Of the accounts your found on node1, what permissions do they have?
 
 ** Challenge 5.2.2 **
+
 There could be unused accounts with privileges.
 
 **Resources**
@@ -50,9 +54,11 @@ There could be unused accounts with privileges.
 === 5.3 Service Misconfiguration 
 
 ** Challenge 5.3.1 **
+
 What are the services is your node1 machine running?
 
 ** Challenge 5.3.2 **
+
 What is running on the machine now?
 
 
