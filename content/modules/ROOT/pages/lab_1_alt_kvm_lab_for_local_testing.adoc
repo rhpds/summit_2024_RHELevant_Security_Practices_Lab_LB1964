@@ -192,7 +192,7 @@ ip addr
 
 Take note of the IP address, then open a terminal on your **bastion** machine.
 
-=== 1.5.5
+=== 1.5.5 Create ec2-user account on vm
 
 You will also need to create a user to connect with over ssh since root is disabled by default in rhel 9.
 
