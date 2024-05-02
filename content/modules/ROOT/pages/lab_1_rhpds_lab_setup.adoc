@@ -26,7 +26,7 @@ So first thing we need to do is to check the SSH key from our bastion host to co
 There are 2 machines we will be connecting to.
 
 * bastion
-* node
+* node1
 
 == 1.2: Create a SSH key pair
 
@@ -40,11 +40,9 @@ You should see a prompt with your current username and the hostname of the machi
 ----
 **Explanation of what you see in the terminal**
 
-```
-* `lab-user` is the current logged in user 
-* `@` is the at symbol which shows that you are connecting to a remote machine
-* `bastion` is the current machine hostname
-```
+`lab-user` is the current logged in user 
+`@` is the at symbol which shows that you are connecting to a remote machine
+`bastion` is the current machine hostname
 
 
 We want to find out if the current machine has any ssh keys under the users ‘.ssh’ directory. 
