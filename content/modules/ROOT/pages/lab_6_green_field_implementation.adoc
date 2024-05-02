@@ -1,21 +1,39 @@
 == Green Field Implementation
 
-=== Vulnerability exploitation
+=== 6.0 Where do I start?
+
+If you have the opertunity to start fresh with a new install for Red Hat Enterprise Linux 9,
+you will want to start with your standard RHEL 9 image. This is sometimes called a golden or base image. 
+
+To help us automation the install process, we will create something called a kickstart file.
+This can also be called an anwser file, anaconda file or install template.
+
+In the most basic setup you can start with the https://access.redhat.com/downloads/content/479/ver=/rhel---9/9.4/x86_64/product-software[RHEL 9 install media].
+
+Then you can create a bootable USB Drive
+
+* https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/performing_a_standard_rhel_9_installation/assembly_preparing-for-your-installation_installing-rhel#create-bootable-usb-linux_assembly_creating-a-bootable-installation-medium[Creating a bootable USB device on Linux]
+
+* https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/performing_a_standard_rhel_9_installation/assembly_preparing-for-your-installation_installing-rhel#creating-a-bootable-usb-windows_assembly_creating-a-bootable-installation-medium[Creating a bootable USB device on Windows]
+
+* https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/performing_a_standard_rhel_9_installation/assembly_preparing-for-your-installation_installing-rhel#creating-a-bootable-usb-mac_assembly_creating-a-bootable-installation-medium[Creating a bootable USB device on macOS]
 
 
-=== Understanding the Red Hat security impact scale
+
+We have some guides on different guides on https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/performing_a_standard_rhel_9_installation/installation-methods-advanced_installing-rhel[install methods for RHEL 9]
+
+
+Assuming you go with the basic media and choose the hardning frameworks like DISA STIGs for RHEL 9 GUI. After you have installed RHEL for the first time there will be a template created under `/root/anacanda-ks.cfg`.
+
+You can save this file and 
 
 
 
-==== Resources
-There is a series of blog post written by Vincent Danen - Vice President, of Product Security for Red Hat, 
-that I would highly suggest you read to help understand what he has seen as treads in the lat 20+ years in the industry.
 
-* https://www.redhat.com/en/blog/patch-management-needs-a-revolution-part-1[Patch management needs a revolution, part 1: Surveying cybersecurity’s lineage]
-* https://www.redhat.com/en/blog/patch-management-needs-a-revolution-part-2[Patch management needs a revolution, part 2: The flood of vulnerabilities]
-* https://www.redhat.com/en/blog/patch-management-needs-a-revolution-part-3[Patch management needs a revolution, part 3: Vulnerability scores and the concept of trust]
-* https://www.redhat.com/en/blog/patch-management-needs-a-revolution-part-4[Patch management needs a revolution, part 4: Sane patching is safe patching is selective patching]
-* https://www.redhat.com/en/blog/patch-management-needs-a-revolution-part-5[Patch management needs a revolution, part 5: How open source and transparency can force positive change]
+
+
+
+
 
 Where can you get the RHEL 9 STIG?
 For Existing RHEL Instances
@@ -30,11 +48,13 @@ For New Installs
 
 * RHEL Installer 
 * Image Builder
+* https://access.redhat.com/labs/kickstartconfig/#basic-configuration[Kickstart Generator]
 
 What if you are bleeding edge and want to find out what is the newest release
 https://github.com/ComplianceAsCode/content
 
 If you want to try more of our labs, I'd suggest:
+
 
 
 * https://www.redhat.com/en/interactive-labs/create-images-container-tools-buildah[Creating images with Container Tools - buildah]
@@ -53,4 +73,12 @@ Security Based Labs:
 
 
 
+==== Resources
+There is a series of blog post written by Vincent Danen - Vice President, of Product Security for Red Hat, 
+that I would highly suggest you read to help understand what he has seen as treads in the lat 20+ years in the industry.
 
+* https://www.redhat.com/en/blog/patch-management-needs-a-revolution-part-1[Patch management needs a revolution, part 1: Surveying cybersecurity’s lineage]
+* https://www.redhat.com/en/blog/patch-management-needs-a-revolution-part-2[Patch management needs a revolution, part 2: The flood of vulnerabilities]
+* https://www.redhat.com/en/blog/patch-management-needs-a-revolution-part-3[Patch management needs a revolution, part 3: Vulnerability scores and the concept of trust]
+* https://www.redhat.com/en/blog/patch-management-needs-a-revolution-part-4[Patch management needs a revolution, part 4: Sane patching is safe patching is selective patching]
+* https://www.redhat.com/en/blog/patch-management-needs-a-revolution-part-5[Patch management needs a revolution, part 5: How open source and transparency can force positive change]
