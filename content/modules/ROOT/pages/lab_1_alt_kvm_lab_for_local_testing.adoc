@@ -9,7 +9,7 @@ Become familiar with how to set up a local machine to work on this workshop.
 
 == 1.1: Introduction
 
-If you want to do this at home or on your own machine follow these instructions.
+**If you want to do this at home or on your own machine follow these instructions.**
 
 If you are in a live classroom or in a phisical workshop, you will skip this section.
 
