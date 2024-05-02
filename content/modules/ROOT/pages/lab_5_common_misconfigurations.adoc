@@ -78,4 +78,23 @@ Depending on what framework you need to apply to your environnement.
 
 === 5.4 Neglecting Updates
 
+When was your machine last patched and updated?
+
+How can you tell?
+
+What can you do if you are in a disconnected network?
+
+You can create your own copy of the repos.
+One way to do this is to use our https://access.redhat.com/labs/yumrepoconfighelper/local/[Yum Repository Configuration Helper lab].
+
+==== 5.5 Major CVE's
+
+As part of the ongoing issues that are brought into light from new CVE's,
+I'll be writting a blog focusing on a common CVE issue and how it can be handled using Red Hat's built in tools or with ansible.
+
+We will expand this section with those blog posts in the future, so make sure to check back at this lab.
+
+
+
+
 === 5.5 
