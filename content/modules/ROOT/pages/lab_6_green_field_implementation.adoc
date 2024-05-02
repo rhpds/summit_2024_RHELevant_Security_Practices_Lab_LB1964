@@ -43,7 +43,11 @@ You can save this file and us it as a template.
 From here you have  a few different ways to create, change or modify a kickstart file for the install on your other machines.
 
 * https://access.redhat.com/labs/kickstartconfig/[Kickstart Generator via browser]
-* You can also check out Image Builder via Web Console
+* You can also check out https://www.redhat.com/sysadmin/linux-golden-homelab-rhel[Image Builder via Web Console]
+
+After you have create a new kick start you can add it to a custom RHEL install media.
+
+
 
 
 
