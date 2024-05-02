@@ -2,9 +2,9 @@
 
 
 
-=== Red Hat Security Reports
+=== Treads seen in Red Hat Security Reports
 
-Because we have been writing the report for so many years, we have been able to note many trends and patterns.
+Because we have been writing security reports for so many years, we have been able to note many trends and patterns.
 
 
 Here are the last few years of Red Hat Product Security Risk Reports
@@ -15,7 +15,6 @@ Here are the last few years of Red Hat Product Security Risk Reports
 * https://access.redhat.com/blogs/766093/posts/2695561[Happy 15th Birthday Red Hat Product Security]
 
 We are going to highlight an handful of issues that have been in the news.
-
 
 
 https://www.redhat.com/en/blog/channel/security
