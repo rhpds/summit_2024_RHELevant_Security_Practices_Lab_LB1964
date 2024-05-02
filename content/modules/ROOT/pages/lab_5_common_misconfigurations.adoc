@@ -17,12 +17,18 @@ The most common issues boiled down are in the following categories:
 
 === 5.1 Weak Passwords
 
-In the past you would check the password with 'pam_cracklib', but this should not be used in RHEL 9.
+** Challenge 5.1.1 **
+What accounts are on your node1 machine?
 
-There is a new package you will want to use called 'pam_pwquality'.
-
+** Challenge 5.1.2 **
+Of those accounts are they using strong password?
 
 **Resources**
+
+In the past you would check the password with 'pam_cracklib', 
+but this should not be used in RHEL 9.
+
+There is a new package you will want to use called 'pam_pwquality'.
 
 * https://access.redhat.com/solutions/6999802[PAM unable to dlopen(/usr/lib64/security/pam_cracklib.so)]
 * https://access.redhat.com/solutions/5027331[Set Password Policy & Complexity for RHEL 8 & 9 via pam_pwhistory, pam_pwquality & pam_faillock]
@@ -31,36 +37,32 @@ There is a new package you will want to use called 'pam_pwquality'.
 
 === 5.2 Permission Issue
 
-For the next steps, as Linux Sys-Admin's we understand there are a handful of places we can look for users on the systems and thier permissions.
+** Challenge 5.2.1 **
+Of the accounts your found on node1, what permissions do they have?
 
-In this lab we are assuming we are on a machine with local acccounts (Not hooked to an LDAP or AD system).
+** Challenge 5.2.2 **
+There could be unused accounts with privileges.
 
-We need to check the common files connected to an account.
+**Resources**
 
-* /etc/users
-* /etc/group
-* /etc/sudoers
-* /etc/shadow
-* /etc/passwd
-* /home/*
-* /etc/cron*
-
-Unused accounts with certain privileges are not being deleted.
 
 
 === 5.3 Service Misconfiguration 
 
-** Adding Ansible playbook to set this up
+** Challenge 5.3.1 **
+What are the services is your node1 machine running?
 
-What are the services that are commonly messed up?
+** Challenge 5.3.2 **
+What is running on the machine now?
 
-Apache
-
-Depending on what framework you need to apply to your environnement.
 
 === 5.4 Neglecting Updates
 
+** Challenge 5.4.1 **
+
 When was your machine last patched and updated?
+
+** Challenge 5.4.2 **
 
 How can you tell?
 
@@ -76,16 +78,3 @@ I'll be writting a blog focusing on a common CVE issue and how it can be handled
 
 We will expand this section with those blog posts in the future, so make sure to check back at this lab.
 
-
-
-
-=== 5.5 
-
-
-We are going to highlight an handful of issues that have been in the news.
-
-
-https://www.redhat.com/en/blog/channel/security
-
-Patch management needs a revolution, part 1: Surveying cybersecurity’s lineage
-https://www.redhat.com/en/blog/patch-management-needs-a-revolution-part-1
