@@ -47,13 +47,7 @@ From here you have  a few different ways to create, change or modify a kickstart
 
 After you have create a new kick start you can add it to a custom RHEL install media.
 
-
-
-
-
-
-
-
+=== 6.5 Harden your machines
 
 Where can you get the RHEL 9 STIG?
 For Existing RHEL Instances
