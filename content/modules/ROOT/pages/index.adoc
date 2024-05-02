@@ -22,7 +22,7 @@ In today's lab, we are going to take you down several roads.
 * Theory, Threats, and Tools
 * Creating a system baseline
 * Common Misconfigurations
-* Exploitation & Mitigation
+* Green Field Implementation
 
 === Lab Access
 
