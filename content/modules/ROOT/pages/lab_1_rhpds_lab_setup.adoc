@@ -11,7 +11,7 @@ Become familiar with the Summit lab environment
 
 If you are in a live classroom or in a phisical workshop, follow these instructions.
 
-If you want to do this at home or on your own machine, you can follow the 'lab_1_rhpds_lab_setup.adoc' which is after this page.
+If you want to do this at home or on your own machine, you can follow the https://github.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/blob/main/content/modules/ROOT/pages/lab_1_alt_kvm_lab_for_local_testing.adoc[lab_1_alt_kvm_lab_for_local_testing.adoc] which is after this page.
 
 
 In this scenario you are a system administrator given a task to harden a Red Hat Enterprise Linux system. You have no idea what is on the system, what it is running, the hardware, or software installed. You are working on a black box.
