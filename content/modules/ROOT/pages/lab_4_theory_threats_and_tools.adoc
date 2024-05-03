@@ -62,11 +62,11 @@ Risks and metrics need to be continuously monitored to make sure that risk mitig
 == 4.3 Risk Management Examples
 
 
-=== 4.3.1 Ransonware
+=== 4.3.1 Ransomware
 
 * A hospital can't treat patients because ransomware attacked and their IT infrastructure is not accessable unless they pay.
 
-* An local ice cream parler can't access thier point of sales system due to ransomware.
+* An local ice cream parlor can't access thier point of sales system due to ransomware.
 
 While both cause business impacts, one is potentally life threating.
 
