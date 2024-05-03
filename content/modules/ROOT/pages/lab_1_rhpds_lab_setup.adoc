@@ -21,7 +21,7 @@ You are given credentials that should give you access to the machine. You are gi
 Instead of having to type in the username and password, we are going to set up ssh keys for authentication.
 In this lab, ssh keys have been made and put on the end machine.
 
-So first thing we need to do is to check the SSH key from our bastion host to connect to the machines we will be working on.
+So first thing we need to do is to copy the SSH key from our bastion host to connect to the machines we will be working on.
 
 There are 2 machines we will be connecting to.
 
