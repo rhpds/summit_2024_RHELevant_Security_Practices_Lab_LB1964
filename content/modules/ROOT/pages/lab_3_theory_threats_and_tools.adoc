@@ -62,7 +62,7 @@ Risks and metrics need to be continuously monitored to make sure that risk mitig
 == 3.3 Risk Management Examples
 
 
-=== Ransonware
+=== 3.3.1 Ransonware
 
 * A hospital can't treat patients because ransomware attacked and their IT infrastructure is not accessable unless they pay.
 
@@ -70,7 +70,7 @@ Risks and metrics need to be continuously monitored to make sure that risk mitig
 
 While both cause business impacts, one is potentally life threating.
 
-=== Data Loss
+=== 3.3.2 Data Loss
 
 * A local dentist office burns down due to an electrical fire along with all their customers medical record.
 
