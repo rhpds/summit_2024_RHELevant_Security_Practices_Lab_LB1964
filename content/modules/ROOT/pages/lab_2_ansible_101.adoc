@@ -110,7 +110,7 @@ To edit a file in vi, you will need to change to edit mode.
 
 You will need to type `i` in your terminal to go into 'insert' mode.
 
-You should now be able to to type, edit and paste into the ternimal to chagne the file.
+You should now be able to to type, edit and paste into the ternimal to change the file.
 
 You will want to copy the following and paste it into the terminal.
 
