@@ -16,7 +16,7 @@ This can also be called an anwser file, anaconda file or install template.
 
 So there are a lot of ways to get started.
 This will depend on your orginization needs.
-Some folks will only be able to use a DVD to install a single machien and others my be able install a whole rack of machines at a time.
+Some folks will only be able to use a DVD to install a single machines and others my be able install a whole rack of machines at a time.
 
 == 6.1 Download RHEL ISO
 
