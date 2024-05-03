@@ -1,6 +1,12 @@
 == Ansible 101
 
-=== Introduction to Ansible
+Lab Length
+Medium/Average (~10-20 mins)
+
+Goal
+Become familiar with the basics of ansible
+
+== 2.1 Introduction to Ansible
 
 Ansible provides open-source automation that reduces complexity and runs everywhere. 
 
@@ -38,7 +44,7 @@ To learn more about ansible check out the Official https://docs.ansible.com/ansi
 We are going to make sure you can get Ansible Installed on RHEL 9.
 
 
-=== Install Ansible for Red Hat Enterprise Linux 9
+== 2.2 Install Ansible for Red Hat Enterprise Linux 9
 
 If you use Ansible content within Red Hat Enterprise Linux (RHEL), 
 you should know that important changes where made with RHEL 8.6 and 9.0.
@@ -60,7 +66,7 @@ sudo dnf install ansible-core -y
 ----
 
 
-=== Basic Ansible setup for Red Hat Enterprise Linux 9
+=== 2.3 Basic Ansible setup for Red Hat Enterprise Linux 9
 
 I like to create a working directory to work on my ansible projects in my home folder
 
@@ -129,7 +135,7 @@ to do this type `:wq`
 This will write the file, and quit the vi program.
 
 
-=== Basic Ansible smoke ping test
+== 2.4 Basic Ansible smoke ping test
 
 Lets make sure we can connect to both our machines
 
@@ -166,7 +172,7 @@ machinehostname | SUCCESS => {
 }
 ---- 
 
-== Reference Documentation
+== 2.5 More Ansible Reference Documentation
 
 https://www.redhat.com/en/blog/updates-using-ansible-rhel-86-and-90[Updates to using Ansible in RHEL 8.6 and 9.0]
 
