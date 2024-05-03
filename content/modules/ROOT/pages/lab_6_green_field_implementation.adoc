@@ -64,8 +64,22 @@ For New Installs
 What if you are bleeding edge and want to find out what is the newest release of the STIG or report an issue?
 https://github.com/ComplianceAsCode/content
 
-== 6.6 Using Ansible for Universal
+== 6.6 Using Ansible for universal, stable and consistent configuration.
 
+RHEL System Roles is a collection of Ansible roles and modules that provide a stable and consistent configuration interface to automate and manage multiple releases of Red Hat Enterprise Linux. 
+
+These are created, maintained and supported by Red Hat.
+
+So Instead of you having to create your own ansible playbooks and roles,
+I would highly suggest that you look for a system role to take care of your needs.
+
+You can https://www.redhat.com/en/blog/rhel-system-roles#:~:text=Red%20Hat%20Enterprise%20Linux%20(RHEL,technical%20burdens%20and%20streamline%20administration.[Learn about Red Hat Enterprise Linux system roles] on our site.
+
+We also have an guide on https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html-single/automating_system_administration_by_using_rhel_system_roles/index[Automating system administration by using RHEL system roles]
+
+So To get started in this appllication
+
+sudo yum install rhel-system-roles -y
 
 == Additional Labs you can try later:
 
