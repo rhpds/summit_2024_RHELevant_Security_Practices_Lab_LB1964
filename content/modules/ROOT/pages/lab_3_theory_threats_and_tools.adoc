@@ -7,13 +7,13 @@ Medium/Average (~10-20 mins)
 Goal
 Scoping our lab needs for with Risk and Security Frameworks
 
-== Lab 3. Why address risk & security frameworks?
+== Lab 4. Why address risk & security frameworks?
 
 Before we get hand on the box, we need to talk about Risk, Frameworks, and what your are trying to protect yourself from.
 
 First lets go for definitions.
 
-=== 3.1  Governance, Risk, and Compliance (aka GRC)
+=== 4.1  Governance, Risk, and Compliance (aka GRC)
 
 It's a framework or approach that organizations use to manage and align their business activities with their objectives, manage risk effectively, and comply with regulations and standards.
 
@@ -34,7 +34,7 @@ TL;DR
 
 
 
-== 3.2 Risk management steps
+== 4.2 Risk management steps
 
 Regardless of the Framework you need to apply, most start with identification.
 
@@ -59,10 +59,10 @@ Once you’ve determined the priority and importance of risks, you can proceed w
 Risks and metrics need to be continuously monitored to make sure that risk mitigation plans are working, or to keep you aware if a risk becomes a greater threat.
 
 
-== 3.3 Risk Management Examples
+== 4.3 Risk Management Examples
 
 
-=== 3.3.1 Ransonware
+=== 4.3.1 Ransonware
 
 * A hospital can't treat patients because ransomware attacked and their IT infrastructure is not accessable unless they pay.
 
@@ -70,7 +70,7 @@ Risks and metrics need to be continuously monitored to make sure that risk mitig
 
 While both cause business impacts, one is potentally life threating.
 
-=== 3.3.2 Data Loss
+=== 4.3.2 Data Loss
 
 * A local dentist office burns down due to an electrical fire along with all their customers medical record.
 
@@ -78,7 +78,7 @@ While both cause business impacts, one is potentally life threating.
 
 Both are catastrophic issues if there are no backup and tested restores process for the vital business data. 
 
-== 3.4 Compliance Frameworks
+== 4.4 Compliance Frameworks
 
 There are a lot of different frameworks out there.
 
@@ -90,7 +90,7 @@ There are a lot of different frameworks out there.
 
 For more info, check out our page on https://access.redhat.com/articles/compliance_activities_and_gov_standards[Compliance Activities and Government Standards].
 
-== 3.5 How do you pick the right framework?
+== 4.5 How do you pick the right framework?
 
 You have to analyse your risk and pick the one that best fits your org.
 
@@ -105,11 +105,11 @@ As of Feb 26th 2024 NIST's released CSF version 2.0.
 ** An organization can use a Community Profile as the basis for its own Target Profile.
 ** Examples of https://www.nist.gov/quick-start-guides[Community Profiles can be found on the NIST CSF website].
 
-== 3.6 How is the NIST CSF Connected with RHEL Hardening?
+== 4.6 How is the NIST CSF Connected with RHEL Hardening?
 
 The NIST Cybersecurity Framework (CSF) and the Red Hat Enterprise Linux (RHEL) 9 Security Technical Implementation Guide (STIG) are both important resources in the field of cybersecurity, but they serve slightly different purposes and have different scopes.
 
-=== 3.6.1 NIST Cybersecurity Framework (CSF):
+=== 4.6.1 NIST Cybersecurity Framework (CSF):
 
 * The NIST CSF is a set of guidelines, standards, and best practices designed to help organizations manage and improve their cybersecurity posture. It provides a framework for organizations to assess and improve their cybersecurity risk management processes.
 
@@ -118,7 +118,7 @@ The NIST Cybersecurity Framework (CSF) and the Red Hat Enterprise Linux (RHEL) 9
 * It consists of five core functions: Identify, Protect, Detect, Respond, and Recover, which provide a high-level framework for organizing cybersecurity activities.
 Red Hat Enterprise Linux 9 Security Technical Implementation Guide (STIG):
 
-=== 3.6.2 Red Hat Enterprise Linux (RHEL) 9 Security Technical Implementation Guide (STIG)
+=== 4.6.2 Red Hat Enterprise Linux (RHEL) 9 Security Technical Implementation Guide (STIG)
 
 * A STIG is a set of guidelines and configuration standards developed by the Defense Information Systems Agency (DISA) for securing computer systems and software.
 
@@ -128,7 +128,7 @@ Red Hat Enterprise Linux 9 Security Technical Implementation Guide (STIG):
 
 * The STIG is typically used by government agencies and organizations that need to comply with stringent security requirements, especially those related to the U.S. Department of Defense (DoD).
 
-=== 3.6.3 Wrap up definition 
+=== 4.6.3 Wrap up definition 
 
 While the NIST CSF provides a high-level framework for cybersecurity risk management, the RHEL 9 STIG offers detailed guidance on implementing security controls specific to Red Hat Enterprise Linux 9 systems. 
 
@@ -143,5 +143,38 @@ Just because have have picked a framework, this does not mean that we are 100% s
 We will see a few example of how the Framework does not secure the machine, more on that later in the lab workshops.
 
 We will be using the RHEL 9 STIG with ansible to harden on our systems, with the understanding that we will have to make some changes for our test lab environment. 
+
+=== 4.7 Configuration compliance in RHEL 
+
+You can use configuration compliance scanning to conform to a baseline defined by a specific
+organization. For example, if you work with the US government, you might have to align your systems
+with the Operating System Protection Profile (OSPP), and if you are a payment processor, you might
+have to align your systems with the Payment Card Industry Data Security Standard (PCI-DSS). You can
+also perform configuration compliance scanning to harden your system security.
+
+Red Hat recommends you follow the Security Content Automation Protocol (SCAP) content provided
+in the SCAP Security Guide package because it is in line with Red Hat best practices for affected
+components.
+
+You can modify (tailor) a profile to customize certain rules, for example, password length. For more
+information about profile tailoring, see Customizing a security profile with SCAP Workbench .
+
+=== 4.7.1 Install OpenSCAP on RHEL 9
+
+In this step we will install OpenSCAP on your bastion host.
+
+[source,ini,role=execute,subs=attributes+]
+----
+sudo yum install openscap-scanner -y
+----
+
+Then we are going to install the content and profiles onto your bastion host
+
+[source,ini,role=execute,subs=attributes+]
+----
+sudo yum install scap-security-guide -y
+----
+
+We will use OpenSCAP in the future Steps.
 
 Now It's time to step to the next part of the workshop by creating an inventory of our current system.
