@@ -1,8 +1,6 @@
-= {lab_name}
+= RHELevant Security Practices Lab - LB1964
 
-Welcome to {lab_name}! We hope you're ready for a dive into security practices with a couple of techies who love to talk about Red Hat Enterprise Linux (RHEL)!
-
-image::rhel-logo-black.jpg[rhel-logo-black,55%,55%]
+Welcome to RHELevant Security Practices Lab! We hope you're ready for a dive into security practices with a couple of techies who love to talk about Red Hat Enterprise Linux (RHEL)!
 
 == Why is this lab important?
 
