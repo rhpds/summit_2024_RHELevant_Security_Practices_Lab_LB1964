@@ -7,7 +7,7 @@ Medium/Average (~10-20 mins)
 Goal
 Capture a consistant machine state with SOSReport and Ansible
 
-== 4.0 Capture machine baseline
+== 3.0 Capture machine baseline
 
 We need to capture starting point for our systems.
 
@@ -24,7 +24,7 @@ The first best way to do this is to use a built-in utility.
 
 We are go use the built in sos utility, aka sosreport.
 
-=== 4.1 Sos utility
+=== 3.1 Sos utility
 
 With the sos utility, you can collect configuration, diagnostic, and troubleshooting data, and provide those files to Red Hat Technical Support.
 This is a great way to help troubleshoot and see the system changes on your system.
@@ -48,7 +48,7 @@ The information collected in a report contains configuration details, system inf
 
 The sos utility writes the data it collects to an archive named sosreport-<host_name>-<support_case_number>-<YYYY-MM-DD>-<unique_random_characters>.tar.xz
 
-=== 4.1 Installing the sos package from the command line
+=== 3.1 Installing the sos package from the command line
 
 To use the sos utility, install the sos package.
 
@@ -74,7 +74,7 @@ Use the rpm utility to verify that the sos package is installed.
 sudo rpm -q sos
 ----
 
-=== 4.2 Generating an sos report from the command line
+=== 3.2 Generating an sos report from the command line
 
 Use the `sos report` command to gather an sos report from a RHEL server.
 
@@ -94,18 +94,18 @@ You can add the `--upload option` to transfer the sos report to Red Hat immediat
 sudo sos report
 ----
 
-=== 4.2.1 (Optional) If you have already opened a Technical Support case with Red Hat,
+=== 3.2.1 (Optional) If you have already opened a Technical Support case with Red Hat,
 enter the case number to embed it in the sos report file name,
 and it will be uploaded to that case if you specified the `--upload` option.
 
 If you do not have a case number, leave this field blank.
 Entering a case number is optional and does not affect the operation of the sos utility.
 
-=== 4.3 Take note of the sos report file name displayed at the end of the console output.
+=== 3.3 Take note of the sos report file name displayed at the end of the console output.
 
 i.e. /var/tmp/sosreport-bastion-2024-04-15-outurcc.tar.xz
 
-=== 4.4 Cleaning an sos report
+=== 3.4 Cleaning an sos report
 
 If you work in an airgapped environment, you can still collect and send data to Red Hat or to your Own IT group 
 
@@ -152,7 +152,7 @@ A mapping of obfuscated elements is available at
 The obfuscated archive is available at
         `/var/tmp/sosreport-*-obfuscated.tar.xz`
 
-=== 4.5 Capturing Ports, Protocalls, and Services with Anisble
+=== 3.5 Capturing Ports, Protocalls, and Services with Anisble
 
 Here's an example of an Ansible playbook that gathers facts from a RHEL 9 machine and creates a report with hardware information, software, services, and system details along with the current date, open your favorite text editor, and create a file named 'PPS_Gather_And_Report.yml'
 
