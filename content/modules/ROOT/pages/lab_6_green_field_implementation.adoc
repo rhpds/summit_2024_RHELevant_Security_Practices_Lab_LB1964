@@ -1,6 +1,12 @@
 == Green Field Implementation
 
-=== 6.0 Where do I start?
+Lab Length
+Medium/Average (~20-30 mins)
+
+Goal
+Get the step for the most control to build a new RHEL machine with hardneing
+
+== 6.0 Where do I start?
 
 If you have the opertunity to start fresh with a new install for Red Hat Enterprise Linux 9,
 you will want to start with your standard RHEL 9 image. This is sometimes called a golden or base image. 
@@ -12,11 +18,11 @@ So there are a lot of ways to get started.
 This will depend on your orginization needs.
 Some folks will only be able to use a DVD to install a single machien and others my be able install a whole rack of machines at a time.
 
-=== 6.1 Download RHEL ISO
+== 6.1 Download RHEL ISO
 
 In the most basic setup you can start with the https://access.redhat.com/downloads/content/479/ver=/rhel---9/9.4/x86_64/product-software[RHEL 9 install media].
 
-=== 6.2 Create a bootable USB Drive
+== 6.2 Create a bootable USB Drive
 
 Then you can create a bootable USB Drive
 
@@ -26,7 +32,7 @@ Then you can create a bootable USB Drive
 
 * https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/performing_a_standard_rhel_9_installation/assembly_preparing-for-your-installation_installing-rhel#creating-a-bootable-usb-mac_assembly_creating-a-bootable-installation-medium[Creating a bootable USB device on macOS]
 
-=== 6.3 Advanced RHEL installs 
+== 6.3 Advanced RHEL installs 
 
 We have multiple guides on different methods of https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/performing_a_standard_rhel_9_installation/installation-methods-advanced_installing-rhel[install methods for RHEL 9]
 
@@ -34,7 +40,7 @@ We have multiple guides on different methods of https://access.redhat.com/docume
 * https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/performing_a_standard_rhel_9_installation/assembly_preparing-for-your-installation_installing-rhel#creating-an-installation-source-on-http_prepare-installation-source[Creating an installation source using HTTP or HTTPS]
 * https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/performing_a_standard_rhel_9_installation/assembly_preparing-for-your-installation_installing-rhel#preparing-to-install-from-the-network-using-http_assembly_preparing-for-your-installation[Preparing to install from the network using HTTP/PXE/Network]
   
-=== 6.4 Customize your kickstart file
+== 6.4 Customize your kickstart file
 
 Assuming you go with the basic media and choose the hardning frameworks like DISA STIGs for RHEL 9 GUI. After you have installed RHEL for the first time there will be a template created under `/root/anacanda-ks.cfg`.
 
@@ -47,7 +53,7 @@ From here you have  a few different ways to create, change or modify a kickstart
 
 After you have create a new kick start you can add it to a custom RHEL install media.
 
-=== 6.5 Harden your machines
+== 6.5 Harden your machines
 
 Where can you get the RHEL 9 STIG?
 For Existing RHEL Instances
@@ -69,14 +75,14 @@ https://github.com/ComplianceAsCode/content
 
 
 
-==== Additional Labs you can try later:
+=== Additional Labs you can try later:
 
 
 * https://www.redhat.com/en/interactive-labs/create-images-container-tools-buildah[Creating images with Container Tools - buildah]
 * https://www.redhat.com/en/interactive-labs/build-machine-images-web-console-image-builder[Using Web Console to build virtual machine images - Image Builder]
 * https://www.redhat.com/en/build-custom-images-red-hat-image-builder[Building custom images with the Image Builder Service]
 
-==== Security Based Labs:
+=== Security Based Labs:
 
 * https://www.redhat.com/en/interactive-labs/openscap-security-compliance-vulnerability-scanning[Using OpenSCAP for security compliance and vulnerability scanning]
 * https://www.redhat.com/en/interactive-labs/configure-terminal-session-recording[Configure terminal session recording]
@@ -86,7 +92,7 @@ https://github.com/ComplianceAsCode/content
 
 
 
-==== Resources
+=== Resources
 There is a series of blog post written by Vincent Danen - Vice President, of Product Security for Red Hat, 
 that I would highly suggest you read to help understand what he has seen as treads in the lat 20+ years in the industry.
 
