@@ -20,17 +20,33 @@ Here are the last few years of Red Hat Product Security Risk Reports
 
 We are going to run this playbook on node1, to simulate an inherited machine with misconfiguration.
 
-Lets pull down the bit.
+First we need to make sure git is installed
+
+[source,ini,role=execute,subs=attributes+]
+----
+sudo yum install git -y
+----
+
+In our termimal, we are going to our ansible working directory.
+[source,ini,role=execute,subs=attributes+]
+----
+cd ~/ansible
+----
+
+
+Next we are going to pull a playbook that will configure our node1 machine for the upcoming tasks. While you could look at the file and see what ansible is doing, it is better for you to run the playbook, then use your current knowledge to find the issues. After which we will give you ansible playbooks to help you find and fix these common issues.
 
 [source,ini,role=execute,subs=attributes+]
 ----
 git clone https://github.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/blob/main/content/modules/ROOT/examples/test-lab1.yml
 ----
 
+Next we are going to run this playbook to our node1 machine,
 
-
-
-
+[source,ini,role=execute,subs=attributes+]
+----
+anisble-playbook -i inventory test-lab1.yml 
+----
 
 The most common issues boiled down are in the following categories:
 
