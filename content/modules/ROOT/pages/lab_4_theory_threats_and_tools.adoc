@@ -116,7 +116,6 @@ The NIST Cybersecurity Framework (CSF) and the Red Hat Enterprise Linux (RHEL) 9
 * The CSF is not specific to any particular technology or platform but offers a flexible structure that can be applied across various industries and organizational contexts.
 
 * It consists of five core functions: Identify, Protect, Detect, Respond, and Recover, which provide a high-level framework for organizing cybersecurity activities.
-Red Hat Enterprise Linux 9 Security Technical Implementation Guide (STIG):
 
 === 4.6.2 Red Hat Enterprise Linux (RHEL) 9 Security Technical Implementation Guide (STIG)
 
@@ -157,7 +156,7 @@ in the SCAP Security Guide package because it is in line with Red Hat best pract
 components.
 
 You can modify (tailor) a profile to customize certain rules, for example, password length. For more
-information about profile tailoring, see Customizing a security profile with SCAP Workbench .
+information about profile tailoring, see https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/security_hardening/scanning-the-system-for-configuration-compliance-and-vulnerabilities_security-hardening#scanning-the-system-with-a-customized-profile-using-scap-workbench_scanning-the-system-for-configuration-compliance-and-vulnerabilities[Customizing a security profile with SCAP Workbench] .
 
 === 4.7.1 Install OpenSCAP on RHEL 9
 
