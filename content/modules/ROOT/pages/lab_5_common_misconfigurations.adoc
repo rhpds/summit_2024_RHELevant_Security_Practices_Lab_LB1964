@@ -1,7 +1,12 @@
 == Common Misconfigurations
 
+Lab Length
+Medium/Average (~10-20 mins)
 
-=== 5 Threads seen in Red Hat Security Reports
+Goal
+Learn about the top Misconfigurations of a machines, how to test for them.
+
+== 5 Threads seen in Red Hat Security Reports
 
 Because we have been writing security reports for so many years, we have been able to note many trends and patterns.
 
@@ -15,7 +20,7 @@ Here are the last few years of Red Hat Product Security Risk Reports
 
 The most common issues boiled down are in the following categories:
 
-=== 5.1 Weak Passwords
+== 5.1 Weak Passwords
 
 **Challenge 5.1.1**
 
@@ -37,7 +42,7 @@ There is a new package you will want to use called 'pam_pwquality'.
 * https://access.redhat.com/solutions/6979714[Set Password Complexity/Policy with pam_pwquality in Red Hat Enterprise Linux 8, 9]
 
 
-=== 5.2 Permission Issue
+== 5.2 Permission Issue
 
 **Challenge 5.2.1**
 
@@ -51,7 +56,7 @@ There could be unused accounts with privileges.
 
 
 
-=== 5.3 Service Misconfiguration 
+== 5.3 Service Misconfiguration 
 
 **Challenge 5.3.1**
 
@@ -62,7 +67,7 @@ What are the services is your node1 machine running?
 What is running on the machine now?
 
 
-=== 5.4 Neglecting Updates
+== 5.4 Neglecting Updates
 
 **Challenge 5.4.1**
 
@@ -77,11 +82,11 @@ What can you do if you are in a disconnected network?
 You can create your own copy of the repos.
 One way to do this is to use our https://access.redhat.com/labs/yumrepoconfighelper/local/[Yum Repository Configuration Helper lab].
 
-=== 5.5 SElinux
+== 5.5 SElinux
 
 
 
-=== 5.6 Major CVE's
+== 5.6 Major CVE's
 
 As part of the ongoing issues that are brought into light from new CVE's,
 I'll be writting a blog focusing on a common CVE issue and how it can be handled using Red Hat's built in tools or with ansible.
