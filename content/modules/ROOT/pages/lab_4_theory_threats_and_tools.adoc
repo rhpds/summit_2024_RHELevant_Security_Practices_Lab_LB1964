@@ -9,7 +9,7 @@ Scoping our lab needs for with Risk and Security Frameworks
 
 == Lab 4. Why address risk & security frameworks?
 
-Before we get hand on the box, we need to talk about Risk, Frameworks, and what your are trying to protect yourself from.
+Before we get hands-on, we need to talk about Risk, Frameworks, and what your are trying to protect yourself from.
 
 First lets go for definitions.
 
