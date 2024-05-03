@@ -55,22 +55,13 @@ After you have create a new kick start you can add it to a custom RHEL install m
 
 == 6.5 Harden your machines
 
-Where can you get the RHEL 9 STIG?
-For Existing RHEL Instances
-
-* pre-built Ansible Playbooks 
-* OpenSCAP scanner
-* Red Hat Insights 
-* Red Hat Satellite
-
-
 For New Installs
 
 * RHEL Installer 
 * Image Builder
 * https://access.redhat.com/labs/kickstartconfig/#basic-configuration[Kickstart Generator]
 
-What if you are bleeding edge and want to find out what is the newest release
+What if you are bleeding edge and want to find out what is the newest release of the STIG or report an issue?
 https://github.com/ComplianceAsCode/content
 
 
