@@ -18,6 +18,20 @@ Here are the last few years of Red Hat Product Security Risk Reports
 * https://www.redhat.com/en/resources/product-security-risk-report-2020[Red Hat Product Security risk report: 2020]
 * https://access.redhat.com/blogs/766093/posts/2695561[Happy 15th Birthday Red Hat Product Security]
 
+We are going to run this playbook on node1, to simulate an inherited machine with misconfiguration.
+
+Lets pull down the bit.
+
+[source,ini,role=execute,subs=attributes+]
+----
+git clone https://github.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/blob/main/content/modules/ROOT/examples/test-lab1.yml
+----
+
+
+
+
+
+
 The most common issues boiled down are in the following categories:
 
 == 5.1 Weak Passwords
