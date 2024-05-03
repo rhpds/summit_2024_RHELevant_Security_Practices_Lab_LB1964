@@ -85,6 +85,11 @@ Cockpit is a web-based graphical interface for servers, intended for everyone, e
 
 === 1.5.1 Install Cockpit Project with Virtual Machine Management
 
+**Important note for this lab**
+
+You should be able to click the clipboard icon in the code box to copy the command, and you will eather use the middle mouse button or right click and paste.
+The keyboard shortcuts for copy and paste (ctrl+c and ctrl+v) wont't work in this.
+
 We are going to install Cockpit, the virtual machine plugin and virtual machine guest packages onto our linux system.
 
 Open a terminal on your host machine, and type
