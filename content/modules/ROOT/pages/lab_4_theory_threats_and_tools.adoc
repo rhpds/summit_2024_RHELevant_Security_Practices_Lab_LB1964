@@ -263,6 +263,14 @@ DISA STIG for Red Hat Enterprise Linux 9 Id: xccdf_org.ssgproject.content_profil
 
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo oscap xccdf eval  --profile xccdf_org.ssgproject.content_profile_sti --results ~/Documents/results_file.xml> /usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml
+sudo oscap xccdf eval  --profile xccdf_org.ssgproject.content_profile_stig --results ~/Documents/OpenScap_results_file.xml /usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml
 ----
 
+Generate OpenSCAP Reports
+
+You can generate reports based on the scan results using the `oscap` tool.
+
+[source,ini,role=execute,subs=attributes+]
+----
+sudo oscap xccdf generate report --output -results ~/Documents/report_file.html ~/Documents/OpenScap_results_file.xml
+----
