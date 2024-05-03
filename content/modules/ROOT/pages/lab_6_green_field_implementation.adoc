@@ -68,12 +68,13 @@ https://github.com/ComplianceAsCode/content
 
 === Additional Labs you can try later:
 
+==== Image Building and Kickstart Labs:
 
 * https://www.redhat.com/en/interactive-labs/create-images-container-tools-buildah[Creating images with Container Tools - buildah]
 * https://www.redhat.com/en/interactive-labs/build-machine-images-web-console-image-builder[Using Web Console to build virtual machine images - Image Builder]
 * https://www.redhat.com/en/build-custom-images-red-hat-image-builder[Building custom images with the Image Builder Service]
 
-=== Security Based Labs:
+==== Security Based Labs:
 
 * https://www.redhat.com/en/interactive-labs/openscap-security-compliance-vulnerability-scanning[Using OpenSCAP for security compliance and vulnerability scanning]
 * https://www.redhat.com/en/interactive-labs/configure-terminal-session-recording[Configure terminal session recording]
@@ -83,7 +84,7 @@ https://github.com/ComplianceAsCode/content
 
 
 
-=== Resources
+==== Resources
 There is a series of blog post written by Vincent Danen - Vice President, of Product Security for Red Hat, 
 that I would highly suggest you read to help understand what he has seen as treads in the lat 20+ years in the industry.
 
