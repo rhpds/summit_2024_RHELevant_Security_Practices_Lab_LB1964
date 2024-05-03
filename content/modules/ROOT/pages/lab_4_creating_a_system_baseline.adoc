@@ -2,10 +2,10 @@
 
 
 Lab Length
-Medium/Average (~5-10 mins)
+Medium/Average (~10-20 mins)
 
 Goal
-Capture a consistant machine state
+Capture a consistant machine state with SOSReport and Ansible
 
 == 4.0 Capture machine baseline
 
