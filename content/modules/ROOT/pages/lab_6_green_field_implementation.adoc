@@ -79,7 +79,22 @@ We also have an guide on https://access.redhat.com/documentation/en-us/red_hat_e
 
 So To get started in this appllication
 
+[source,ini,role=execute,subs=attributes+]
+----
 sudo yum install rhel-system-roles -y
+----
+
+To find out about all the avaible system role on your machine, you can go to the following area to check the documentations and examples.
+
+[source,ini,role=execute,subs=attributes+]
+----
+
+ls /usr/share/doc/rhel-system-roles/
+
+----
+
+At the time of writting this lab (May 3rd 2024) on RHEL 9.3 there are 31 roles.
+
 
 == Additional Labs you can try later:
 
