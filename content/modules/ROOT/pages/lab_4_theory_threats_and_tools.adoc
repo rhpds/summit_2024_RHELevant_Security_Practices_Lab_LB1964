@@ -76,7 +76,7 @@ While both cause business impacts, one is potentally life threating.
 
 * A research and development lab developing and supporting equiptment that is used around the world for 20+ years, have an old machine that thier legacy software runs on, and the ancient hard drive dies.
 
-Both are catastrophic issues if there are no backup and tested restores process for the vital business data. 
+Both are catastrophic issues if their is no tested backup and restore process for the vital business data. 
 
 == 4.4 Compliance Frameworks
 
