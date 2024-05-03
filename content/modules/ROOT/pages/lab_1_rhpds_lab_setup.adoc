@@ -47,6 +47,9 @@ You should see a prompt with your current username and the hostname of the machi
 
 We want to find out if the current machine has any ssh keys under the users ‘.ssh’ directory. 
 
+You should be able to click the clipboard icon in the code box to copy the command, and you will eather use the middle mouse button or right click and paste.
+The keyboard shortcuts for copy and paste (ctrl+c and ctrl+v) wont't work in this.
+
 
 [source,ini,role=execute,subs=attributes+]
 ----
@@ -63,11 +66,6 @@ ls ~/.ssh/
 Next we see there are files in the directory.
 
 You should now see 2 randomly named files called `xxxxxxx.pem` and `xxxxxxx.pub`
-
-**Important note for this lab**
-
-You should be able to click the clipboard to copy the command, and you will eather use the middle mouse button or right click and paste.
-The keyboard shortcuts for copy and paste (ctrl+c and ctrl+v) wont't work in this.
 
 [source,textinfo]
 ----
