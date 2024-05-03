@@ -263,7 +263,7 @@ DISA STIG for Red Hat Enterprise Linux 9 Id: xccdf_org.ssgproject.content_profil
 
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo oscap xccdf eval  --profile xccdf_org.ssgproject.content_profile_stig --results ~/Documents/OpenScap_results_file.xml /usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml
+sudo oscap xccdf eval  --profile xccdf_org.ssgproject.content_profile_stig --results ~/OpenScap_results_file.xml /usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml
 ----
 
 Generate OpenSCAP Reports
@@ -274,3 +274,19 @@ You can generate reports based on the scan results using the `oscap` tool.
 ----
 sudo oscap xccdf generate report --output ~/OpenScap_report_file.html ~/OpenScap_results_file.xml
 ----
+
+Depending on what browser you have access to, you can open the .html report in firefox or if you want to do it in your terminal, lets install a terminal bowser called `lynx`.
+
+[source,ini,role=execute,subs=attributes+]
+----
+sudo yum install lynx -y
+----
+
+You can then open the report by using this command.
+
+[source,ini,role=execute,subs=attributes+]
+----
+lynx ~/OpenScap_report_file.html
+----
+
+If you scan down to the area that says `Scoring system` and you should be to see the percentage of your system is compliant.
