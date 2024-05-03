@@ -29,6 +29,9 @@ In today's lab, we are going to take you down several roads.
 The terminal window to your right is *already* logged into the lab environment as the `{ssh_user}` user via `ssh`. 
 All steps of this lab are to be completed as the `{ssh_user}` user on the bastion server.
 
+You should be able to click the clipboard icon in the code box to copy the command, and you will eather use the middle mouse button or right click and paste.
+The keyboard shortcuts for copy and paste (ctrl+c and ctrl+v) wont't work in this.
+
 To access the Web Console GUI once you have installed it in `Step 1`, you will need to open a browser, go to settings, type "proxy" in the search bar in the top right corner and click settings. Select "Manual proxy configuration" and go to "SOCKS Host" and put in localhost and for the "Port" put in 5060. Finally check the checkbox for "Proxy DNS when using SOCKS v5".
 
 Finally you will need to open a terminal window and run `{socks_ssh_command}` using the password `{admin_pass}`.
