@@ -259,7 +259,7 @@ Dictionaries:
 
 In this case we are doing everything on the termnial, so you may not have gnome installed, so we will pick the RHEL 9 STIG.....
 
-DISA STIG for Red Hat Enterprise Linux 9 Id: xccdf_org.ssgproject.content_profile_sti
+DISA STIG for Red Hat Enterprise Linux 9 Id: xccdf_org.ssgproject.content_profile_stig
 
 [source,ini,role=execute,subs=attributes+]
 ----
