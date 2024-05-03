@@ -272,5 +272,5 @@ You can generate reports based on the scan results using the `oscap` tool.
 
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo oscap xccdf generate report --output -results ~/Documents/report_file.html ~/Documents/OpenScap_results_file.xml
+sudo oscap xccdf generate report --output ~/Documents/OpenScap_report_file.html ~/Documents/OpenScap_results_file.xml
 ----
