@@ -64,7 +64,7 @@ Next we see there are files in the directory.
 
 You should now see 2 randomly named files called `xxxxxxx.pem` and `xxxxxxx.pub`
 
-** Important note for this lab **
+**Important note for this lab**
 
 You should be able to click the clipboard to copy the command, and you will eather use the middle mouse button or right click and paste.
 The keyboard shortcuts for copy and paste (ctrl+c and ctrl+v) wont't work in this.
