@@ -2,7 +2,7 @@
 
 
 Lab Length
-Medium/Average (~10-20 mins)
+Medium/Average (~15-25 mins)
 
 Goal
 Become familiar with how to set up a local machine to work on this workshop.
@@ -30,6 +30,12 @@ We are going to assume you are running
 
 * Fedora 38+ or
 * Red Hat Enterprise Linux 9+
+
+Hardware Requirements
+
+* CPU with 4 Thread
+* RAM 4GB
+* STORAGE 40 GB
 
 And that you have an account with sudo permissions.
 
