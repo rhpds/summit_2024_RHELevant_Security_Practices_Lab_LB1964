@@ -257,8 +257,12 @@ Dictionaries:
 <---------Output_Abbreviated------------------->
 ----
 
+In this case we are doing everything on the termnial, so you may not have gnome installed, so we will pick the RHEL 9 STIG.....
+
+DISA STIG for Red Hat Enterprise Linux 9 Id: xccdf_org.ssgproject.content_profile_sti
+
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo oscap xccdf eval  --profile <profile_name> --results <results_file.xml> /usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml
+sudo oscap xccdf eval  --profile xccdf_org.ssgproject.content_profile_sti --results ~/Documents/results_file.xml> /usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml
 ----
 
