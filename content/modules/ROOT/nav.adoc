@@ -5,3 +5,5 @@
 * xref:lab_4_theory_threats_and_tools.adoc[Lab 4 Theory, Threats, and Tools]
 * xref:lab_5_common_misconfigurations.adoc[Lab 5 Common Misconfigurations]
 * xref:lab_6_green_field_implementation.adoc[Lab 6 Green Field Implementation]
+* xref:lab_7_web_console.adoc[Lab 7 Web Console Administration]
+
