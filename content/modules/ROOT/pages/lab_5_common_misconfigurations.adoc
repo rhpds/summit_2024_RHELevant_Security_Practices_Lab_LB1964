@@ -17,11 +17,11 @@ The most common issues boiled down are in the following categories:
 
 === 5.1 Weak Passwords
 
-** Challenge 5.1.1 **
+**Challenge 5.1.1**
 
 What accounts are on your node1 machine?
 
-** Challenge 5.1.2 **
+**Challenge 5.1.2**
 
 Of those accounts are they using strong password?
 
@@ -39,11 +39,11 @@ There is a new package you will want to use called 'pam_pwquality'.
 
 === 5.2 Permission Issue
 
-** Challenge 5.2.1 **
+**Challenge 5.2.1**
 
 Of the accounts your found on node1, what permissions do they have?
 
-** Challenge 5.2.2 **
+**Challenge 5.2.2**
 
 There could be unused accounts with privileges.
 
@@ -53,22 +53,22 @@ There could be unused accounts with privileges.
 
 === 5.3 Service Misconfiguration 
 
-** Challenge 5.3.1 **
+**Challenge 5.3.1**
 
 What are the services is your node1 machine running?
 
-** Challenge 5.3.2 **
+**Challenge 5.3.2**
 
 What is running on the machine now?
 
 
 === 5.4 Neglecting Updates
 
-** Challenge 5.4.1 **
+**Challenge 5.4.1**
 
 When was your machine last patched and updated?
 
-** Challenge 5.4.2 **
+**Challenge 5.4.2**
 
 How can you tell?
 
@@ -77,7 +77,11 @@ What can you do if you are in a disconnected network?
 You can create your own copy of the repos.
 One way to do this is to use our https://access.redhat.com/labs/yumrepoconfighelper/local/[Yum Repository Configuration Helper lab].
 
-==== 5.5 Major CVE's
+=== 5.5 SElinux
+
+
+
+=== 5.6 Major CVE's
 
 As part of the ongoing issues that are brought into light from new CVE's,
 I'll be writting a blog focusing on a common CVE issue and how it can be handled using Red Hat's built in tools or with ansible.
