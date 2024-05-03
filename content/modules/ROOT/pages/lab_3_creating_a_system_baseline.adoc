@@ -160,7 +160,10 @@ In this example we will use Vi text editor.
 
 Building on the past directories we have set up our ansible working directory we are going to create a new file using vi.
 
-`vi ~/ansible/PPS_Gather_And_Report.yml`
+[source,ini,role=execute,subs=attributes+]
+----
+vi ~/ansible/PPS_Gather_And_Report.yml
+----
 
 Then we are going into insert mode in the file by pressing `i`
 then you will paste the playbook below.
