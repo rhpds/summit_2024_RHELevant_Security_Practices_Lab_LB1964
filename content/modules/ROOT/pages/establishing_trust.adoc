@@ -1,6 +1,7 @@
 == Establishing trust
 
 Create a anisble playbook for rhel 9 that checks for 
+
 * users 
 * groups
 * shadow file
