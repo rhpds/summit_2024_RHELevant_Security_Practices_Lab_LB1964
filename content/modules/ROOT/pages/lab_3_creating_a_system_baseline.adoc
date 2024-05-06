@@ -71,7 +71,7 @@ Use the rpm utility to verify that the sos package is installed.
 
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo rpm -q sos
+sudo rpm -q sos -y
 ----
 
 === 3.2 Generating an sos report from the command line
