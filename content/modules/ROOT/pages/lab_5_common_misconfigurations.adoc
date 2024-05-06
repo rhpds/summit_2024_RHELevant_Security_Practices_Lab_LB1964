@@ -118,6 +118,13 @@ One way to do this is to use our https://access.redhat.com/labs/yumrepoconfighel
 
 Here is an example on how this could all be done with Ansible
 
+First we should make sure we are on the bastion host, and change the directory to ansible's working.
+
+[source,ini,role=execute,subs=attributes+]
+----
+cd ~/ansible
+----
+
 [source,ini,role=execute,subs=attributes+]
 ----
 vi trust_baseline.yml
