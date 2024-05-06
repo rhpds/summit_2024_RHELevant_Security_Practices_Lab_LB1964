@@ -4,14 +4,14 @@
   become: yes
   tasks:
 
-    - name: Create user highpriv with specific password
+    - name: Create user with specific password
       user:
         name: highpriv
         group: wheel
         shell: /bin/bash
         password: '$y$j9T$6o4cSSle5Sod0/ISyGsay0$mKh5EDR49AfbqwQ41OYiwZWgNwqQCgv3qBy3EaqnE83'
 
-    - name: Create user lowpriv with specific password
+    - name: Create another user with specific password
       user:
         name: lowpriv
         shell: /bin/bash
@@ -20,7 +20,7 @@
     - name: Echo to file /tmp/highpriv
       shell: echo 'xkcd.com/538/' > /tmp/highpriv
 
-    - name: Echo root password to file
+    - name: Write password to file
       copy:
         content: "password"
         dest: /home/lowpriv/root13.txt
