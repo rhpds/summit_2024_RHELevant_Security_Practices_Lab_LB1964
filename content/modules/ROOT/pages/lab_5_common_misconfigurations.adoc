@@ -45,7 +45,7 @@ Next we are going to run this playbook to our node1 machine,
 
 [source,ini,role=execute,subs=attributes+]
 ----
-anisble-playbook -i inventory test-lab1.yml 
+ansible-playbook -i inventory test-lab1.yml 
 ----
 
 The most common issues boiled down are in the following categories:
