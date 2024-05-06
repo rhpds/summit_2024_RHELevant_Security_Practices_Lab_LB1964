@@ -48,6 +48,8 @@ Next we are going to run this playbook to our node1 machine,
 ansible-playbook -i inventory test-lab1.yml 
 ----
 
+For the next section We want you to use your access from bastion host to the node1 machine, log into the machine and find out as much of the following as posible. 
+
 The most common issues boiled down are in the following categories:
 
 == 5.1 Weak Passwords
@@ -112,7 +114,9 @@ What can you do if you are in a disconnected network?
 You can create your own copy of the repos.
 One way to do this is to use our https://access.redhat.com/labs/yumrepoconfighelper/local/[Yum Repository Configuration Helper lab].
 
-== 5.5 
+== 5.5 Ansible Example
+
+Here is an example on how this could all be done with Ansible
 
 [source,ini,role=execute,subs=attributes+]
 ----
