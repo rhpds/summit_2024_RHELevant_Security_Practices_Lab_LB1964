@@ -20,11 +20,11 @@ Here are the last few years of Red Hat Product Security Risk Reports
 
 We are going to run this playbook on node1, to simulate an inherited machine with misconfiguration.
 
-First we need to make sure git is installed
+First we need to make sure curl is installed
 
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo yum install git -y
+sudo yum install curl -y
 ----
 
 In our termimal, we are going to our ansible working directory.
@@ -38,7 +38,7 @@ Next we are going to pull a playbook that will configure our node1 machine for t
 
 [source,ini,role=execute,subs=attributes+]
 ----
-git clone https://github.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/blob/main/content/modules/ROOT/examples/test-lab1.yml
+curl https://raw.githubusercontent.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/main/content/modules/ROOT/examples/test-lab1.yml -O
 ----
 
 Next we are going to run this playbook to our node1 machine,
