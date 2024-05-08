@@ -215,7 +215,10 @@ then type `:wq` to write the file, and exit vi.
 
 Next we are going to create a jinja2 template  named `report_template.j2` also using vi.
 
-`vi ~/ansible/report_template.j2`
+[source,ini,role=execute,subs=attributes+]
+----
+vi ~/ansible/report_template.j2
+----
 
 Then we are going into insert mode in the file by pressing `i`
 then you will paste the jinja2 template below.
