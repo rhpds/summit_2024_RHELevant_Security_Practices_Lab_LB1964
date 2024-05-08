@@ -18,6 +18,17 @@
 * Join us live at summit using our Red Hat Demo Platform or
 * Follow the Documentation to do this on your own linux machine inside of a VM.
 
+=== How to Follow along with the lab.
+
+* https://github.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/blob/main/content/modules/ROOT/pages/index.adoc[Lab Landing Page]
+* https://github.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/blob/main/content/modules/ROOT/pages/lab_1_rhpds_lab_setup.adoc[RHPDS Lab Setup]
+* https://github.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/blob/main/content/modules/ROOT/pages/lab_1_alt_kvm_lab_for_local_testing.adoc[How to set up a Local Linux Machine with KVM to do this lab]
+* https://github.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/blob/main/content/modules/ROOT/pages/lab_2_ansible_101.adoc[Ansible 101]
+* https://github.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/blob/main/content/modules/ROOT/pages/lab_3_creating_a_system_baseline.adoc[Creating a system baseline]
+* https://github.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/blob/main/content/modules/ROOT/pages/lab_4_theory_threats_and_tools.adoc[Managing Risk & Security Framework]
+* https://github.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/blob/main/content/modules/ROOT/pages/lab_5_common_misconfigurations.adoc[Common Misconfigurations]
+* https://github.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/blob/main/content/modules/ROOT/pages/lab_6_green_field_implementation.adoc[Green Field Implementation]
+* https://github.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/blob/main/content/modules/ROOT/pages/lab_7_web_console.adoc[Install Web Console]
 
 === Speaker Information:
 
@@ -25,6 +36,11 @@
 ** Senior Technical Account Manager, Red Hat
 ** jloscar@redhat.com
 
+
 * Nate Lager
 ** Senior Technical Marketing Manager, Red Hat
 ** nlager@redhat.com 
+
+=== Presentation Slides:
+* https://events.redhat.com/accounts/register123/redhat/readhat2/rhna/events/7015y000003sm3zqaa/RHELevant.pdf[Feb 15 2024 - RHEL Security Workshop and Red Hat User Group]
+* May 6-9 2024 - RHELevant Security Practices | Red Hat Summit 2024
