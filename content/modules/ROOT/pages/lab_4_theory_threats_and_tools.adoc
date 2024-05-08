@@ -23,7 +23,7 @@ It's a framework or approach that organizations use to manage and align their bu
 
 * **Compliance**: Ensures that organizations adhere to relevant laws, regulations, standards, and internal policies that are applicable to their industry and operations. Compliance efforts aim to prevent legal issues, regulatory fines, and reputational damage.
 
-GRC helps organizations integrate these three elements into their operations to create a structured approach to managing the complexities of running a business while staying in line with legal and ethical standards. That being said, it takes a culture shift to make these changes. Not only the adopotion, but the impelmentation and standardization. 
+GRC helps organizations integrate these three elements into their operations to create a structured approach to managing the complexities of running a business while staying in line with legal and ethical standards. That being said, It takes a culture shift to make these changes. Not only the adoption, but the implementation and standardization. 
 
 TL;DR
 
