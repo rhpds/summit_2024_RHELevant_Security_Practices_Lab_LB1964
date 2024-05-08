@@ -8,7 +8,7 @@
 === You will learn how to:
 
 * track your current machine state
-* choose best practices for your enviernment
+* choose best practices for your environment
 * scope your risk model
 * use **Ansible core** to harden **Red Hat Enterprise Linux 9**
 
