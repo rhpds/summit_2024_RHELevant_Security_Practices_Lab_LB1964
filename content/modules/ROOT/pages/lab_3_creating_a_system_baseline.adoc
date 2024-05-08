@@ -62,7 +62,7 @@ Install the `sos` package.
 
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo dnf install sos
+sudo dnf install sos -y
 ----
 
 **Verification steps**
@@ -71,7 +71,7 @@ Use the rpm utility to verify that the sos package is installed.
 
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo rpm -q sos -y
+sudo rpm -q sos
 ----
 
 === 3.2 Generating an sos report from the command line
