@@ -168,7 +168,7 @@ vi trust_baseline.yml
     - name: Generate Report
       template:
         src: system_report.j2
-        dest: "{{ ansible_hostname }}_{{ current_date }}_common_misconfigurations_system_report.txt"
+        dest: "{{ ansible_hostname }}_common_misconfigurations_system_report.txt"
 ----
 
 [source,ini,role=execute,subs=attributes+]
@@ -201,6 +201,8 @@ Enabled Repositories:
 Patch Level:
 {{ patch_level_output.stdout }}
 ----
+
+
 
 == 5.6 Major CVE's
 
