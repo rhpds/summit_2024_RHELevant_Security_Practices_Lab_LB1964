@@ -156,6 +156,13 @@ The obfuscated archive is available at
 
 Here's an example of an Ansible playbook that gathers facts from a RHEL 9 machine and creates a report with hardware information, software, services, and system details along with the current date, open your favorite text editor, and create a file named 'PPS_Gather_And_Report.yml'
 
+Lets change the working directory to work on ansible projects in the home folder
+
+[source,ini,role=execute,subs=attributes+]
+----
+cd ~/ansible
+----
+
 In this example we will use Vi text editor.
 
 Building on the past directories we have set up our ansible working directory we are going to create a new file using vi.
