@@ -43,4 +43,4 @@
 
 === Presentation Slides:
 * https://events.redhat.com/accounts/register123/redhat/readhat2/rhna/events/7015y000003sm3zqaa/RHELevant.pdf[Feb 15 2024 - RHEL Security Workshop and Red Hat User Group]
-* May 6-9 2024 - RHELevant Security Practices | Red Hat Summit 2024
+* https://github.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/blob/main/Post-Summit_RHELevant_Security_Practices_Red_Hat_Summit_2024.pdf[May 6-9 2024 - RHELevant Security Practices | Red Hat Summit 2024 SLIDES]
