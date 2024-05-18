@@ -160,6 +160,10 @@ sudo virt-customize -a /var/lib/libvirt/images/node1-rhel-9.3-x86_64-kvm.qcow2 -
 ** You can also use an IP address and add **:9090** to login
 * This gives you a login page with username and password
 ** You will use the same login as your host machine
+* Upon Logging in, In the Top Right side you will See "Limited Access"
+** Click the big Blue button that says "Turn On administrative access"
+** Type in the Password
+** Now in the Top Right side you will see "Administrative access"
 * On the left hand side find and click **Virtual machines**,
 ** When the page opens
 ** In the top left corner, click **Storage pools**
@@ -300,20 +304,8 @@ The key's randomart image is:
 <<< OUTPUT ABRIDGED >>>
 ----
 
-=== 1.7 Push your public ssh Key to node1
 
-Now we want to send our public key to the root user on the node1 machine.
-
-
-[source,ini,role=execute,subs=attributes+]
-----
-ssh-copy-id root@node1IPADDRESS
-----
-
-It should promopt you to enter the root password to the node1 machine.
-
-
-=== 1.8 Verifying Key Pair Creation
+=== 1.7 Verifying Key Pair Creation
 
 Now lets make sure we can see the newly created ssh keypair.
 
@@ -333,6 +325,19 @@ You should now see 2 new files called `id_rsa` and `id_rsa.pub`
 [lab-user@bastion ~]$ ls ~/.ssh/
 authorized_keys  config   id_rsa  id_rsa.pub
 ----
+
+=== 1.8 Push your public ssh Key to node1
+
+Now we want to send our public key to the  ec2-user on the node1 machine.
+
+
+[source,ini,role=execute,subs=attributes+]
+----
+ssh-copy-id ec2-user@node1IPADDRESS
+----
+
+It should promopt you to enter the root password to the node1 machine.
+
 
 === 1.9 Verifying ssh keys work
 
