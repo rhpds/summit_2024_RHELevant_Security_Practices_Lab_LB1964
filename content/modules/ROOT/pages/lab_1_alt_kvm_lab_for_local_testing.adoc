@@ -17,12 +17,11 @@ In this scenario you are a system administrator given a task to harden a Red Hat
 You have no idea what is on the system, what it is running, the hardware, or software installed. 
 You are working on a black box.
 
-You are given credentials that should give you access to the machine. 
-You are given a Jump Box also known as a bastion host or as a control node, and a username to log in with. 
-
-Instead of having to type in the username and password, 
-we are going to set up ssh keys for authentication.
-
+You are given access and credentials to a hypervisor machine. 
+The goal is to create 2 machines that we will use.
+First we will create a Virtual Machine as a Ansible Control Node also known as a Bastion.
+Second we will create a Virtual Machine as an Ansible Node to push changes too.
+You can add more nodes or other version of RHEL to have a testbed of RHEL 7-9.
 
 == 1.2 Expectations of your Host OS
 
@@ -64,7 +63,7 @@ Then you will be able to log in access.redhat.com with your newly created accoun
 * In the top left corner, click the **Downloads**,
 * Then under Products find **Red Hat Enterprise Linux**,
 * Then click the blue **All Red Hat Enterprise Linux Downloads**, 
-* Scroll down untill you see the **Red Hat Enterprise Linux 9.3 KVM Guest Image**,
+* Scroll down untill you see the **Red Hat Enterprise Linux 9.4 KVM Guest Image**,
 * Then click the **Download Now**,
 
 While we wait for the download to finish.
@@ -109,14 +108,14 @@ sudo systemctl enable libvirtd --now
 sudo systemctl enable --now cockpit.socket
 ----
 
-=== 1.5.2 KVM Image Prep
+=== 1.5.2 KVM Image Prep of baston and node1
 
 Once you have downloaded the kvm/qcow2 images,
 Move them to `/var/lib/libvirt/images`
 
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo mv ~/Downloads/rhel-9.3-x86_64-kvm.qcow2 /var/lib/libvirt/images/rhel-9.3-x86_64-kvm.qcow2
+sudo mv ~/Downloads/rhel-9.4-x86_64-kvm.qcow2 /var/lib/libvirt/images/rhel-9.4-x86_64-kvm.qcow2
 ----
 
 Then lets verify that the image is in the right location.
@@ -125,14 +124,22 @@ Then lets verify that the image is in the right location.
 ----
 sudo ls /var/lib/libvirt/images/
 ----
-
-Next we will make a copy of the image and name it node.
+Next we will make a copy of the image and name it baston.
 
 In your terminal
 
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo cp /var/lib/libvirt/images/rhel-9.3-x86_64-kvm.qcow2 /var/lib/libvirt/images/node1-rhel-9.3-x86_64-kvm.qcow2
+sudo cp /var/lib/libvirt/images/rhel-9.4-x86_64-kvm.qcow2 /var/lib/libvirt/images/baston-rhel-9.4-x86_64-kvm.qcow2
+----
+
+Next we will make a copy of the image and name it node1.
+
+In your terminal
+
+[source,ini,role=execute,subs=attributes+]
+----
+sudo cp /var/lib/libvirt/images/rhel-9.3-x86_64-kvm.qcow2 /var/lib/libvirt/images/node1-rhel-9.4-x86_64-kvm.qcow2
 ----
 
 Then we will want to customize the kvm image with the following command.
@@ -149,7 +156,9 @@ Then set a root password into the image
 
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo virt-customize -a /var/lib/libvirt/images/node1-rhel-9.3-x86_64-kvm.qcow2 --root-password password:MySecurePassphrasefor2024 --uninstall cloud-init
+sudo virt-customize -a /var/lib/libvirt/images/baston-rhel-9.4-x86_64-kvm.qcow2 --root-password password:MySecurePassphrasefor2024 --uninstall cloud-init
+
+sudo virt-customize -a /var/lib/libvirt/images/node1-rhel-9.4-x86_64-kvm.qcow2 --root-password password:MySecurePassphrasefor2024 --uninstall cloud-init
 ----
 
 
@@ -183,7 +192,7 @@ sudo virt-customize -a /var/lib/libvirt/images/node1-rhel-9.3-x86_64-kvm.qcow2 -
 ** In the top Right side click the **Import VM**
 *** In the Name feild we want to use **node1**
 *** On the Connections option we want to make sure that **System** is selected
-*** On the Disk image we want to use this path **/var/lib/libvirt/images//var/lib/libvirt/images/node1-rhel-9.3-x86_64-kvm.qcow2**
+*** On the Disk image we want to use this path **/var/lib/libvirt/images//var/lib/libvirt/images/node1-rhel-9.4-x86_64-kvm.qcow2**
 *** On Operation system choose Red Hat Enterprise Linux 9
 *** On Memory go with the default 2 GB of Ram
 *** Then Click the **Import and Run** 
@@ -207,7 +216,6 @@ ip addr
 
 Take note of the IP address, then open a terminal on your **bastion** machine.
 
-=== 1.5.5 Create ec2-user account on vm
 
 You will also need to create a user to connect with over ssh since root is disabled by default in rhel 9.
 
@@ -248,7 +256,7 @@ You should see a prompt with your current username and the hostname of the machi
 
 [source,textinfo]
 ----
-[lab-user@bastion ~]$
+[ec2-user@bastion ~]$
 ----
 
 
@@ -284,10 +292,10 @@ Then on the screen will be a message that says something like.
 
 <<< OUTPUT ABRIDGED >>>
 
-Your identification has been saved in /home/lab-user/.ssh/id_rsa
-Your public key has been saved in /home/lab-user/.ssh/id_rsa.pub
+Your identification has been saved in /home/ec2-user/.ssh/id_rsa
+Your public key has been saved in /home/ec2-user/.ssh/id_rsa.pub
 The key fingerprint is:
-SHA256:5Z8GpqUSojEcZWvtspDVefI5YIVajUr3+HTVi3HcE+4 lab-user@bastion.fnlng.internal
+SHA256:5Z8GpqUSojEcZWvtspDVefI5YIVajUr3+HTVi3HcE+4 ec2-user@bastion.fnlng.internal
 The key's randomart image is:
 +---[RSA 3072]----+
 |    o  +.    o o.|
@@ -322,7 +330,7 @@ You should now see 2 new files called `id_rsa` and `id_rsa.pub`
 
 [source,textinfo]
 ----
-[lab-user@bastion ~]$ ls ~/.ssh/
+[ec2-user@bastion ~]$ ls ~/.ssh/
 authorized_keys  config   id_rsa  id_rsa.pub
 ----
 
